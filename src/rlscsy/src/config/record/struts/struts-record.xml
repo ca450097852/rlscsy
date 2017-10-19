@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="record-package" extends="struts-xgx" namespace="/">
+	
+		<action name="record_*" class="recordAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+	
+		<!-- 档案要素-->
+		<action name="element_*" class="com.hontek.record.action.ElementAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		<!-- 档案要素关系-->
+		<action name="objElement_*" class="com.hontek.record.action.ObjElementAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		<!--对象档案参照-->
+		<action name="elementTemplet_*" class="com.hontek.record.action.ElementTempletAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		<!-- 二维码 -->
+		<action name="proTypeQrcode_*" class="proTypeQrcodeAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<action name="proTypeArea_*" class="proTypeAreaAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+			<action name="massif_*" class="massifAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<action name="proTypeBatch_*" class="proTypeBatchAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		
+		<!-- web分类二维码 -->
+		<action name="webproTypeQrcode_*" class="proTypeQrcodeAction" method="{1}"> 
+			<result name="json"></result>
+		</action>
+		<!-- web批次二维码 -->
+		<action name="webproTypeBatch_*" class="proTypeBatchAction" method="{1}"> 
+			<result name="json"></result>
+		</action>
+	</package>
+
+</struts>

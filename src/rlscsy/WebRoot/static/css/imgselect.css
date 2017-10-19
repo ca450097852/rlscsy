@@ -1,0 +1,47 @@
+.imglist {
+    clear: both;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    overflow: hidden;
+	display: block;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.imglist li {
+    border: 1px solid #fff;
+    cursor: pointer;
+    float: left;
+    height: 199px;
+    margin-bottom: 10px;
+    margin-right: 8px;
+    width: 188px;
+	display: block;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+.imglist li span {
+    height: 126px;
+    margin: 8px;
+    width: 168px;
+}
+
+
+.imglist li h2 {
+    line-height: 25px;
+    text-align: center;
+	font-weight: normal;
+}
+.imglist .selected {
+    border: 1px solid #d7e4ea;
+}
+
+.imglist li p {
+    /* background: rgba(0, 0, 0, 0) url("../images/line1.png") no-repeat scroll center center; */
+    line-height: 17px;
+    text-align: center;
+}

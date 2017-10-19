@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="sys-package" extends="struts-xgx" namespace="/">
+		
+		<!-- 组织机构类别 -->
+		<action name="enttype_*" class="com.hontek.sys.action.EntTypeAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<!-- 组织机构类别 -->
+		<action name="mbenttype_*" class="com.hontek.sys.action.EntTypeAction" method="{1}"> 
+			<result name="json"></result>
+		</action>		
+		
+		<!-- 组织机构 -->
+		<action name="ent_*" class="com.hontek.sys.action.EnterpriseActon" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>	
+		
+		<!-- 组织机构 -->
+		<action name="mbent_*" class="com.hontek.sys.action.EnterpriseActon" method="{1}"> 
+			<result name="json"></result>
+		</action>
+		
+		<!-- 企业注册  -->
+		<action name="register" class="com.hontek.sys.action.EnterpriseActon" method="register"> 
+			<result name="json"></result>
+		</action>
+		
+		
+		<!-- 用户登陆 -->
+		<action name="login_*" class="userAction" method="{1}"> 
+			<result name="login">/jsp/login/login.jsp</result>
+			<result name="loginSuccess">/jsp/main/manager.jsp</result>
+			<result name="companyLogin" type="redirect">/company/main.jsp</result>
+			<result name="companyToLogin">/company/login.jsp</result>
+			<interceptor-ref name="defaultStack" />
+		</action>
+		
+		<action name="compangLogout" class="userAction" method="logout"> 
+			<result name="login">/company/login.jsp</result>
+			<interceptor-ref name="defaultStack" />
+		</action>
+		
+		<!-- 用户管理 -->
+		<action name="user_*" class="userAction" method="{1}"> 
+			<result name="json"></result>
+			<result name="login">/jsp/login/login.jsp</result>
+			<result name="loginSuccess">/jsp/main/manager.jsp</result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+			
+		<action name="role_*" class="roleAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<action name="log_*" class="logAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<action name="col_*" class="colAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<action name="rolePurv_*" class="rolePurvAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		
+		<!-- 接入系统账号 -->
+		<action name="interAccount_*" class="interAccountAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<!-- 系统配置信息 -->
+		<action name="sysconfig_*" class="sysconfigAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>	
+		
+		<!-- 风格关系 -->
+		<action name="entStyle_*" class="entStyleAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>	
+		
+		
+		<action name="ajaxSessionTimeout" class="timeOutAction" method="ajaxSessionTimeout">
+				<result name="timeout">/jsp/login/login.jsp </result>
+		</action>
+		
+		<action name="ajaxSessionTimeoutToCom" class="timeOutAction" method="ajaxSessionTimeout">
+				<result name="timeout">/company/login.jsp </result>
+		</action>
+		
+		<!-- 门户风格设置表 -->
+		<action name="styleconfig_*" class="styleConfigAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<action name="entExpand_*" class="entExpandAction" method="{1}">
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<action name="banner_*" class="bannerAction" method="{1}">
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<action name="tagStyle_*" class="tagStyleAction" method="{1}">
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<action name="entStyleUp_*" class="entStyleAction" method="uploadFile"> 
+			<result name="json"></result>
+		</action>
+		<action name="bannerUp_*" class="bannerAction" method="upFile">
+			<result name="json"></result>
+		</action>
+		<action name="tagStyleUp_*" class="tagStyleAction" method="uploadFile">
+			<result name="json"></result>
+		</action>
+	</package>
+
+</struts>
+
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="portalweb-package" extends="struts-xgx" namespace="/">
+		
+		<!-- 门户网站 -->
+		<action name="portal_*_*" class="com.hontek.portalweb.action.Web{1}Action" method="{2}"> 
+			<result name="json"></result>
+		</action>	
+		
+		<action name="app_*" class="com.hontek.portalweb.action.AppOperateAction" method="{1}"> 
+			
+
+		</action>	
+		
+	</package>
+
+</struts>
+
+

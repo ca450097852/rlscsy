@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/aop  http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+    http://www.springframework.org/schema/tx  http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+    <!-- 配置对应的Service  以及该Service 里面调用的Dao -->
+    <bean id="entTypeService" class="com.hontek.sys.service.impl.EntTypeServiceImpl">
+		<property name="entTypeDao" ref="entTypeDao" />
+	</bean>
+	
+	<bean id="enterprseService" class="com.hontek.sys.service.impl.EnterpriseServiceImpl">
+		<property name="enterpriseDao" ref="enterpriseDao" />
+		<property name="rolePurvServiceInter" ref="rolePurvServiceInter" />
+		<property name="roleService" ref="roleService" />
+		<property name="userService" ref="userService" />
+		<property name="auditCtrlServiceInter" ref="auditCtrlServiceInter" />
+		<property name="sysconfigService" ref="sysconfigService" /><!-- 系统配置 -->
+		<property name="proTypeDao" ref="proTypeDao"/>
+		<property name="recordService" ref="recordService"/><!-- 档案 -->
+		<property name="proTypeAreaDao" ref="proTypeAreaDao"/>
+		<property name="entExpandDao" ref="entExpandDao"/>
+		<property name="tagStyleService" ref="tagStyleService"/>
+	</bean>
+	
+	<bean id="userService" class="com.hontek.sys.service.impl.UserServiceImpl">
+		<property name="userDao" ref="userDao" />
+		<property name="roleUserDao" ref="roleUserDao" />
+	</bean>
+	
+	<bean id="roleService" class="com.hontek.sys.service.impl.RoleServiceImpl">
+		<property name="roleDao" ref="roleDao" />
+		<property name="roleUserDao" ref="roleUserDao" />
+		
+	</bean>
+	
+	<bean id="logService" class="com.hontek.sys.service.impl.LogServiceImpl">
+		<property name="logDao" ref="logDao" />
+	</bean>
+	
+	<bean id="colService" class="com.hontek.sys.service.impl.ColServiceImpl">
+		<property name="colDao" ref="colDao" />
+	</bean>
+	
+	<bean id="rolePurvServiceInter" class="com.hontek.sys.service.impl.RolePurvServiceImpl">
+		<property name="rolePurvDao" ref="rolePurvDao" />
+		<property name="rolePurvDefDao" ref="rolePurvDefDao" />
+		<property name="colDao" ref="colDao" />
+		<property name="roleUserDao" ref="roleUserDao" />
+	</bean>
+	
+	<bean id="rolePurvDefServiceInter" class="com.hontek.sys.service.impl.RolePurvDefServiceImpl">
+		<property name="rolePurvDefDao" ref="rolePurvDefDao" />
+		<property name="colDao" ref="colDao" />
+	</bean>
+	
+	<!-- 接入系统账号 -->
+    <bean id="interAccountServiceInter" class="com.hontek.sys.service.impl.InterAccountServiceImpl">
+		<property name="interAccountDao" ref="interAccountDao" />
+		<property name="enterpriseDao" ref="enterpriseDao" />		
+	</bean>
+	
+	<!-- 系统配置信息 -->
+	<bean id="sysconfigService" class="com.hontek.sys.service.impl.SysconfigServiceImpl">
+		<property name="sysconfigDao" ref="sysconfigDao" />
+	</bean>
+	
+	
+	<!-- 风格关系 -->
+	<bean id="entStyleService" class="com.hontek.sys.service.impl.EntStyleServiceImpl">
+		<property name="entStyleDao" ref="entStyleDao" />
+		<property name="bannerDao" ref="bannerDao"/>
+	</bean>
+	
+	
+	<!-- 门户风格设置表 -->
+	<bean id="styleConfigService" class="com.hontek.sys.service.impl.StyleConfigServiceImpl">
+		<property name="styleConfigDao" ref="styleConfigDao"/>
+	</bean>
+	
+	<bean id="entExpandService" class="com.hontek.sys.service.impl.EntExpandServiceImpl">
+		<property name="entExpandDao" ref="entExpandDao"/>
+	</bean>
+	
+	<bean id="bannerService" class="com.hontek.sys.service.impl.BannerServiceImpl">
+		<property name="bannerDao" ref="bannerDao"/>
+	</bean>
+	
+	
+	<bean id="tagStyleService" class="com.hontek.sys.service.impl.TagStyleServiceImpl">
+		<property name="tagStyleDao" ref="tagStyleDao"/>
+		<property name="entExpandDao" ref="entExpandDao"/>
+	</bean>
+</beans> 

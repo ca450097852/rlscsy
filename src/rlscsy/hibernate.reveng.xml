@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+
+	<table name="TB_GOODS_BUY" schema="XGX"></table>
+	<table name="Customer" schema="dbo" catalog="DS_DATA"></table>
+	<table name="Store" schema="dbo" catalog="DS_DATA"></table>
+</hibernate-reverse-engineering>

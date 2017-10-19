@@ -1,0 +1,97 @@
+@charset "GBK"; 
+html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,em,font,img,small,strong,b,u,i,s,dl,dt,dd,ol,ul,li,
+	fieldset,form,label{padding:0px; margin:0px;}
+body{color:#606060; margin:0;padding:0;font-family: Tahoma;background:#f0f0f0;}
+blockquote, q{quotes: none}
+blockquote:before, blockquote:after,q:before, q:after{content:''content: none}
+.clear{clear:both;height:0px;overflow:hidden;}
+
+/* css通用设置 begin */
+a{color:#606060;text-decoration: none;cursor:pointer;} /* 未访问的链接 */
+img{border:0px;margin:0;padding:0;vertical-align:middle; }
+.fl{float:left;}
+.fr{float:right;}
+
+
+/*头部公共样式*/
+.CENTER{margin:0 auto;}
+.CENTER_content_left{width:100%;}
+.product_title{background:url("../images/nav_bg.png") repeat-x;height:39px;line-height:39px;padding:0 10px}
+.product_title font{color:#fff;font-weight:bold;}
+
+
+/*溯源查询样式*/
+.suyuan_content{margin:10px 0;}
+.con{padding:10px 20px;width:225px;margin:0 auto;}
+.con h3{padding:10px 0;}
+.symSreach{margin:0 0 10px 0;}
+.symSreach input{height:23px;line-height:23px;width:215px;}
+.con_NO{padding:0 10px;}
+.con_NO i{float:left;margin:2px 5px;background:url("../images/bg_index_07.png") no-repeat;width:41px;height:34px;text-align:center;line-height:34px;cursor:pointer;font-style:normal;}
+.con_NO i.color{float:left;margin:2px 5px;background:url("../images/bg_index_08.png") no-repeat;width:41px;height:34px;text-align:center;line-height:34px;cursor:pointer;font-style:normal;color:#930;}
+.btn{background:url("../images/bg_index_09.png") no-repeat;width:82px;height:33px;line-height:33px;text-align:center;}
+.btn_symSreach{margin:10px auto;color:#930;}
+.suyuan_text{border:1px solid #e5d5b6;border-radius:5px;padding:10px;line-height:30px;min-height:206px;background:#fff;margin:0 10px;}
+
+
+/*新闻列表样式*/
+.news_list{margin:10px;background:#fff;border:1px solid #ccc;border-radius:5px;padding:10px;}
+.news_list ul{margin:0;padding:0;}
+.news_list ul li{list-style:inside;line-height:25px;border-bottom:1px dashed #ccc;padding:0 10px;height:50px;}
+.news_list ul li span{float:right;}
+.page{text-align:center;height:30px;line-height:30px;padding-top:10px;}
+
+
+/*新闻详情样式*/
+.news_detail{margin:10px;}
+.news_detail h3{text-align:center;font-size:18px;padding:10px 0;}
+.article_source{text-align:center;border-bottom:1px dotted #ccc;padding:10px 0;margin-bottom:10px;}
+.news_detail p{line-height:30px;text-indent:2em;}
+
+;
+/*产品展示样式*/
+.product_list{margin:10px;}
+.search{background:#ff9933;padding:5px 10px;}
+.search_area{width:99%;margin:10px 0;height:25px;line-height:25px;border:1px solid #ccc;background:#fff;}
+.search input{width:80%;line-height:22px;border:none;padding:0 10px;}
+.search span{background:url("../images/searchicon.png") no-repeat right center;height:25px;width:10%;display:block;float:right;margin-right:7px;}
+.product_list{margin:10px;border:1px solid #ccc;border-bottom:none;box-shadow:0 4px 3px #ccc;}
+.product{padding:10px;background:#FFF;border-bottom:1px solid #ccc;}
+.product_img{border:1px solid #ccc;padding:3px;width:50px;height:50px;float:left;margin-right:10px;}
+.product_text{float:left;padding:5px 0;line-height:25px;}
+
+
+
+
+/*产品详情样式*/
+.product_detail{margin:10px;}
+.product_detail_img{text-align:center;}
+.product_detail_img img{border:1px solid #ccc;padding:5px;background:#fff;}
+.product_detail_text{background:#fff;background:#fff;border:1px solid #ccc;border-radius:5px;margin:10px 0 0 0;padding:10px;}
+.td_title{width:35%;text-align:center;}
+.product_detail_text td{padding:5px;}
+
+
+
+/*投诉举报样式*/
+.complaint_content{margin:10px;border-radius:5px;box-shadow:0 3px 3px #ccc;}
+.div_line01{border:1px solid #ccc;}
+.complaint_content input{border:none;color:#999;height:25px;line-height:25px;width:70%;}
+.complaint_content dl{height:35px;padding:5px;background:#fff;line-height:35px;}
+.complaint_content dt{float:left;padding:0 10px;}
+.div_line01 dd{float:left;height:30px;line-height:30px;margin:6px 0;}
+.div_line02{border:1px solid #ccc;}
+.div_line03{border:1px solid #ccc;background:#fff;padding:6px 10px;height:28px;line-height:28px;}
+.div_line04{border:1px solid #ccc;border-top:none;background:#fff;}
+.div_line04 textarea{padding:10px;border:none;height:100px;color:#999;width:90%;}
+.div_btn{text-align:center;margin:15px auto;background:url("../images/bg_index_09.png") no-repeat;width:82px;height:33px;line-height:33px;text-align:center;color:#930;}
+.no_bor_top{border-top:none;}
+.mar_bot{margin-bottom:10px;}
+
+
+/*举报结果样式*/
+.complaint_result{background:#fff;margin:10px;}
+.complaint_result td{padding:10px;}
+
+/*底部样式*/
+.BOTTOM{text-align:center;border-top:5px solid #ff9933;padding:5px 0;}

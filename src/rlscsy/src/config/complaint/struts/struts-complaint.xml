@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="complaint-package" extends="struts-xgx" namespace="/">
+		<!-- 投诉举报-->
+		<action name="complaint_*" class="com.hontek.complaint.action.ComplaintAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+			
+			<!-- 文件下載配置 -->
+			<result name="download" type="stream">
+				<!-- 对应web中下载配置：application/x-msdownload -->
+				<param name="contentType">application/x-msdownload</param>
+				<param name="inputName">inputStream</param>
+				<!-- 对应web中下载配置：response.setHeader("Content-Disposition", "attachment;filename="+newUser.getFilename()); -->
+				<param name="contentDisposition">attachment;filename=${#filename}</param>
+				<!-- 对应web中下载配置：byte[] b = new byte[1024]; -->
+				<param name="bufferSize">1024</param>
+			</result>
+		</action>
+		
+		<!-- 前台所调用的action -->
+		<action name="compfor_*" class="com.hontek.complaint.action.ComplaintAction" method="{1}"> 
+			<result name="json"></result>
+			<result name="success">/portal/complaint.jsp</result>
+		</action>
+	
+		<!-- 举报工单-->
+		<action name="workOrder_*" class="com.hontek.complaint.action.WorkOrderAction" method="{1}"> 
+			<result name="json"></result>
+			<!--  <interceptor-ref name="loginInterceptorStack" />-->
+		</action>
+		
+	
+	</package>
+
+</struts>

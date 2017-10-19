@@ -1,0 +1,93 @@
+.text-black{ color:#212121;}
+
+.x-cards{padding-top:0;}
+.panel{ border:0;}
+.panel.panel-default{ margin-bottom:10px;}
+.row{ margin:0;}
+.x-col{ padding :2px;}
+
+.tb-nopadding{ padding:0;}
+.btn i{ font-size:20px;}
+.btn span{ font-size:12px; font-weight:normal;}
+
+.tb-img1{ width:100%; /* height:133px; */}
+.tb-img5{ width:70%;}
+.tb-img6{ width:100%;}
+
+/*顶部titlebar*/
+.x-titlebar{ background-color:#00AA00;}
+
+
+/*
+.grid9 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.grid9 .cell {
+  padding: 0;
+}
+.grid9 .cell .card {
+  width: 60px;
+  margin: 10px auto;
+  text-align: center;
+  border: 0px solid #888;
+  border-radius: 6px;
+  padding: 5px;
+}
+*/
+
+.grid9 .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.grid9 .cell {
+  padding: 0;
+  overflow: hidden;
+}
+
+.grid9 .cell .card i {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  color: #888;
+}
+
+/*
+.grid9 .cell .card .title {
+  display: block;
+  text-align: center;
+  word-wrap: break-word;
+}
+.grid9 .cell .card .btn {
+	padding: 0;
+}
+*/
+
+.portal-main .x-contents>.x-contents-content {
+	overflow: hidden;
+}
+
+.grid9 .btn{
+	width: 100%;
+}
+
+.x-portal .x-contents[xid=carousel]{
+	height:288px;		
+}
+
+.iosstatusbar .x-portal .x-contents[xid=carousel]{
+	height:308px;		
+}
+
+
+.x-portal >.x-panel-top{
+	z-index:100;
+}
+.x-portal >.x-panel-top > .x-titlebar{
+	background-color:transparent;
+	color: white;
+}
+
+

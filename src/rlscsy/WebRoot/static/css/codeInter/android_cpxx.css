@@ -1,0 +1,44 @@
+@charset "GBK"; 
+html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,em,font,img,small,strong,b,u,i,s,dl,dt,dd,ol,ul,li,
+	fieldset,form,label{padding:0px; margin:0px;}
+body{color:#606060; font:46px/150% Arial, Tahoma,"宋体";margin:0;padding:0;}
+h2,h3{font:bold 14px '微软雅黑'}
+blockquote, q{quotes: none}
+blockquote:before, blockquote:after,q:before, q:after{content:''content: none}
+.clear{clear:both;height:0px;overflow:hidden;}
+
+/* css通用设置 begin */
+a{color:#606060;text-decoration: none;cursor:pointer;} /* 未访问的链接 */
+img{border:0px;margin:0;padding:0;vertical-align:middle; }
+.fl{float:left;}
+.fr{float:right;}
+.INDEX{width:320px;background:#f0f0f0;}
+
+
+/*顶部样式*/
+.TOP{}
+.TOP ul{list-style:none;}
+.TOP ul li{background:url("../../image/code/xt_02.jpg") repeat-x;border:1px solid #ccc;border-top:none;width:24.8%;float:left;text-align:center;height:75px;line-height:75px;}
+.TOP ul li.bor_no{border-left:none;border-right:none;}
+.TOP ul li.check a{color:#fff;}
+.TOP ul li.check{background:url("../../image/code/nav_bg.jpg") repeat-x;}
+
+
+/*中间样式 *** 初始样式 */
+.CENTER{margin:10px 0;padding:0 10px;}
+.CENTER dl{padding-top:5px;}
+.CENTER dl dt{float:left;width:25%;text-align:right;padding-right:0.5em;}
+.font_col{color:#09C}
+.CENTER dl dd{float:left;}
+.CENTER dl dd span{float:left;width:100%;display: inline-block;}
+.kuang{border:1px solid #ccc;border-radius:5px;padding:10px 10px 10px 0;margin:20px;box-shadow:2px 2px 2px #999999;}
+.zhuisu{text-align:center;margin-top:20px;} 
+.CENTER table{color:#606060; font:40px/150% Arial, Tahoma,"宋体";margin:0 auto;padding:0;}
+.tdss{ width:30%;vertical-align: top;}
+
+
+/*底部样式*/
+.BOTTOM{text-align:center;border-top:1px solid #ccc;border-bottom:1px solid #ccc;padding:5px 0;}
+
+
+

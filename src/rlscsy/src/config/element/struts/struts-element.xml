@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="element-package" extends="struts-xgx" namespace="/">
+	    		
+	    <!-- 耳标 -->
+		<action name="eartag_*" class="eartagAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<!-- 三品一标 -->
+		<action name="threea_*" class="threeaAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<!-- 检验报告 -->
+		<action name="checkinfo_*" class="checkinfoAction" method="{1}">
+			<result name="json"></result>
+		</action>
+		
+		
+		<!-- 农业投入品购买 -->
+		<action name="agriInput_*" class="agriInputAction" method="{1}">
+			<result name="json"></result>
+		</action>
+		
+		<!-- 农业投入品使用 -->
+		<action name="agriUse_*" class="agriUseAction" method="{1}">
+			<result name="json"></result>
+		</action>
+		
+		<!-- 采摘收获信息 -->
+		<action name="gaininfo_*" class="gaininfoAction" method="{1}">
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<!-- 农业投入品种类 -->
+		<action name="agriType_*" class="agriTypeAction" method="{1}">
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<!-- 销售记录 -->
+		<action name="saleinfo_*" class="saleinfoAction" method="{1}">
+			<result name="json"></result>
+		</action>
+		
+		<!-- 要素附件 -->
+		<action name="elementApp_*" class="elementAppAction" method="{1}">
+			<result name="json"></result>
+		</action>
+		
+		<!-- 修剪除草表 -->
+		<action name="xiujianchucao_*" class="xiujianchucaoAction" method="{1}"> 
+			<result name="json"></result>
+		</action>
+		
+		<!-- 肥料投入品使用记录信息表 -->
+		<action name="fertilizeruse_*" class="fertilizerUseAction" method="{1}"> 
+			<result name="json"></result>
+		</action>
+		
+		<!-- 生产节点信息 -->
+		<action name="nodeinfo_*" class="nodeinfoAction" method="{1}">
+			<result name="json"></result>
+		</action>
+				
+		<!-- 饲料信息 -->
+		<action name="feedUse_*" class="feedUseAction" method="{1}">
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+				
+		<!-- 兽药信息 -->
+		<action name="drugUse_*" class="drugUseAction" method="{1}">
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<!-- 原料信息表 -->
+		<action name="materials_*" class="materialsAction" method="{1}">
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<!-- 加工投入品信息表 -->
+		<action name="processUse_*" class="processUseAction" method="{1}">
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+	</package>
+
+</struts>
+
+

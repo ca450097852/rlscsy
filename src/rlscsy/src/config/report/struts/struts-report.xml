@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="report-package" extends="struts-xgx" namespace="/">
+		
+		<action name="report_*" class="reportAction" method="{1}"> 
+			<!--<interceptor-ref name="loginInterceptorStack" />-->
+		</action>
+		
+		<action name="uploadFile_*" class="uploadAction" method="{1}">
+		</action>
+		
+	</package>
+
+</struts>

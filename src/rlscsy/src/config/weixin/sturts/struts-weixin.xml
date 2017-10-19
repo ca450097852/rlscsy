@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="weixin-package" extends="struts-xgx" namespace="/">
+	    			
+		<!-- 产品 -->
+		<action name="proWeixin_*" class="productActionWeixin" method="{1}"> 
+			<result name="json"></result>
+		</action>
+		
+		<!-- 溯源信息 -->
+		<action name="traceWeixin_*" class="traceActionWeixin" method="{1}"> 
+			<result name="json"></result>
+		</action>
+
+		<!-- 通知公告信息 -->
+		<action name="infoWeixin_*" class="infoActionWeixin" method="{1}"> 
+			<result name="json"></result>
+		</action>
+		
+		<!-- 投诉举报信息 -->
+		<action name="complaintWeixin_*" class="complaintActionWeixin" method="{1}"> 
+			<result name="json"></result>
+		</action>
+	</package>
+
+</struts>
+
+

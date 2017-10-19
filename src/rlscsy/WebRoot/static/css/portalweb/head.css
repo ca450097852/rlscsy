@@ -1,0 +1,39 @@
+@charset "GBK"; 
+html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,em,font,img,small,strong,b,u,i,s,dl,dt,dd,ol,ul,li,
+	fieldset,form,label{padding:0px; margin:0px;}
+body{color:#606060; margin:0;padding:0;font-family: Tahoma;font-size:12px;}
+h2,h3{font:bold 14px '微软雅黑'}
+blockquote, q{quotes: none}
+blockquote:before, blockquote:after,q:before, q:after{content:''content: none}
+.clear{clear:both;height:0px;overflow:hidden;}
+
+/* css通用设置 begin */
+a{color:#606060;text-decoration: none;cursor:pointer;} /* 未访问的链接 */
+img{border:0px;margin:0;padding:0;vertical-align:middle; }
+.fl{float:left;}
+.fr{float:right;}
+
+
+
+/*顶部样式*/
+.TOP{margin:0px;padding:0;background:#fffdf2;}
+.topcenter{background:#efefef;height:25px;line-height:25px;}
+.top_font{width:1000px;margin:0 auto;}
+.top_font font{color:#090;}
+.logocenter{width:1000px;margin:0 auto;padding:10px 0;}
+.logo{float:left;}
+.top_search{float:right;}
+.search_div span{float:left;}
+.top_search p{height:30px;line-height:30px;}
+.top_search_btn{display:block;width:65px;height:27px;text-align:center;float:right;line-height:25px;background:url("../../image/portalweb/top_search_bg.png") repeat-x scroll 0 0;border:1px solid #f59133;border-radius:0px 3px 3px 0px;color:#930;}
+.search_div input{height:25px;width:200px;border:1px solid #ccc;border-right:none;}
+.navigation{background:url("../../image/portalweb/nav_bg.png") repeat-x;height:39px;line-height:39px;}
+.navigation ul{margin:0;padding:0;list-style:none;width:1000px;margin:0 auto;font-size:16px;color:#fff;font-weight:bold;}
+.navigation ul li{float:left;width:130px;text-align:center;}
+.navigation ul li.check{background:url("../../image/portalweb/dangqian_bg.png") no-repeat;text-align:center;color:#7d2600;z-index:2;height:66px;position:relative;margin-top:-6px;padding-top:6px;}
+
+.navigation ul li a{color:#fff;}
+.navigation ul li.check a{color:#7d2600}
+
+
+.top_search_check{ color:red;}

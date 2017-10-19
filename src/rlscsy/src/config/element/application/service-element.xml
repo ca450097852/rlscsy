@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/aop  http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+    http://www.springframework.org/schema/tx  http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+    <!-- 配置对应的Service  以及该Service 里面调用的Dao -->
+	
+	<!-- 生产信息 -->
+	<bean id="eartagServiceInter" class="com.hontek.element.service.impl.EartagServiceImpl">
+		<property name="eartagDao" ref="eartagDao" />
+	</bean>
+	
+	<!-- 种植喂养表  -->
+	<bean id="threeaServiceInter" class="com.hontek.element.service.impl.ThreeaServiceImpl">
+		<property name="threeaDao" ref="threeaDao" />
+	</bean>
+
+	
+	<!-- 检验报告 -->
+	<bean id="checkinfoServiceInter" class="com.hontek.element.service.impl.CheckinfoServiceImpl">
+		<property name="checkinfoDao" ref="checkinfoDao" />
+		<property name="elementAppDao" ref="elementAppDao" />
+	</bean>
+	
+	<bean id="elementAppServiceInter" class="com.hontek.element.service.impl.ElementAppServiceImpl">
+		<property name="elementAppDao" ref="elementAppDao" />
+	</bean>
+	
+	<!-- 农业投入品购买 -->
+	<bean id="agriInputServiceInter" class="com.hontek.element.service.impl.AgriInputServiceImpl">
+		<property name="agriInputDao" ref="agriInputDao" />		
+	</bean>
+	
+	<!-- 农业投入品使用 -->
+	<bean id="agriUseServiceInter" class="com.hontek.element.service.impl.AgriUseServiceImpl">
+		<property name="agriUseDao" ref="agriUseDao" />		
+	</bean>
+	
+	<!-- 采摘收获信息 -->
+	<bean id="gaininfoServiceInter" class="com.hontek.element.service.impl.GaininfoServiceImpl">
+		<property name="gaininfoDao" ref="gaininfoDao" />		
+		<property name="agriUseDao" ref="agriUseDao" />		
+		<property name="warningDao" ref="warningDao" />		
+	</bean>
+	
+	<!-- 农业投入品类别 -->
+	<bean id="agriTypeServiceInter" class="com.hontek.element.service.impl.AgriTypeServiceImpl">
+		<property name="agriTypeDao" ref="agriTypeDao" />		
+	</bean>
+	
+	<!-- 销售记录 -->
+	<bean id="saleinfoServiceInter" class="com.hontek.element.service.impl.SaleinfoServiceImpl">
+		<property name="saleinfoDao" ref="saleinfoDao" />		
+	</bean>	
+	
+	<!-- 修剪除草表 -->
+	<bean id="xiujianchucaoServiceInter" class="com.hontek.element.service.impl.XiujianchucaoServiceImpl">
+		<property name="xiujianchucaoDao" ref="xiujianchucaoDao" />
+	</bean>
+	
+	<!-- 肥料投入品使用记录信息表 -->
+	<bean id="fertilizerUseServiceInter" class="com.hontek.element.service.impl.FertilizerUseServiceImpl">
+		<property name="fertilizerUseDao" ref="fertilizerUseDao" />
+	</bean>
+	
+	<!-- 生产节点信息  -->
+	<bean id="nodeinfoServiceInter" class="com.hontek.element.service.impl.NodeinfoServiceImpl">
+		<property name="nodeinfoDao" ref="nodeinfoDao" />		
+	</bean>
+	
+	<!-- 兽药信息  -->
+	<bean id="drugUseServiceInter" class="com.hontek.element.service.impl.DrugUseServiceImpl">
+		<property name="drugUseDao" ref="drugUseDao" />		
+	</bean>
+	
+		<!-- 饲料信息  -->
+	<bean id="feedUseServiceInter" class="com.hontek.element.service.impl.FeedUseServiceImpl">
+		<property name="feedUseDao" ref="feedUseDao" />		
+	</bean>
+	
+	<!-- 原料信息表  -->
+	<bean id="materialsService" class="com.hontek.element.service.impl.MaterialsServiceImpl">
+		<property name="materialsDao" ref="materialsDao" />		
+	</bean>
+	
+	<!-- 加工投入品信息表  -->
+	<bean id="processUseService" class="com.hontek.element.service.impl.ProcessUseServiceImpl">
+		<property name="processUseDao" ref="processUseDao" />		
+	</bean>
+</beans> 
+
+
+

@@ -1,0 +1,85 @@
+#login {
+	background: url(../../images/login/login_02.png) no-repeat;
+	width: 439px;
+	height: 233px;
+	padding-top: 108px;
+	/*padding-left: 115px;*/
+	margin: 0px auto;
+}
+
+/* 登陆内容样式*/
+.input1 {
+	width: 198px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #669acc;
+	float: left;
+	color: #1360bc;
+	background: #fff;
+	margin: 0 auto 17px 115px;
+}
+
+.input2 {
+	width: 198px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #669acc;
+	float: left;
+	color: #1360bc;
+	
+	background: #fff;
+	margin: 0 auto 20px 115px;
+}
+
+.txt4 {
+	width: 200px;
+	margin: 0 auto 25px 115px;
+	float: left;
+}
+
+.input4 {
+	width: 100px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #669acc;
+	color: #1360bc;
+	background: #fff;
+}
+
+.txt4 img {
+	float: right;
+}
+
+.login-btn-bg {
+	width: 174px;
+	height: 35px;
+	border: 0;
+	background: url(../../images/login/btnLogin.png) no-repeat;
+	margin: 0 auto 22px 115px;
+	float: left;
+}
+
+.login-btn-bg:hover {
+	background: url(../../images/login/btnLoginHover.png) no-repeat;
+}
+
+#domError {
+	width: 300px;
+	color: #BFEFFF;
+	font-size: 12px;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+}
+
+#info{
+    width:100%;
+    border: 0px solid #669acc;
+    float:left;
+    color: #669afc;
+    font-family:"宋体",Arial;
+    font-size:12px;
+    padding-left:20px;
+    line-height:24px;
+    z-index: 100;
+}

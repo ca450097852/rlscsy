@@ -1,0 +1,60 @@
+
+/*中间样式*/
+.CENTER{margin:30px auto 0 auto;padding:0 10px;width:1000px;}
+.CENTER_content{margin-top:10px;}
+.CENTER_content_left{width:725px;float:left;}
+.news_list{margin:10px 0 0 0;}
+.news_list ul{margin:0;padding:0;}
+.news_list ul li{list-style:inside;height:32px;line-height:32px;border-bottom:1px dashed #ccc;padding:0 10px;}
+.news_list ul li span{float:right;}
+.product_title{background:url("../../image/portalweb/title_bg.png") repeat-x;height:26px;line-height:26px;width:705px;padding:0 10px}
+.product_title font{color:#ff6600;}
+.page{text-align:center;height:30px;line-height:30px;padding-top:10px;}
+.newsdiv_btn{margin-bottom:10px;}
+.newsdiv_btn span{background:#fff6c9;margin-left:20px;padding:10px;float:left;font-size:14px;border:1px solid #ff6600;text-align:center;border-radius:5px;}
+.newsdiv_btn span a{color:#7d2600;}
+.newsdiv_btn span a.curre{color:#f60;}
+
+.CENTER_content_right{float:right;width:265px;}
+.info{border:1px solid #e5d5b6;padding:5px;border-radius:5px;margin-bottom:10px;}
+.info_title{border-bottom:1px dashed #930;height:30px;line-height:30px;}
+.info_title font{color:#F60;font-weight:bold;}
+.info_title span{float:right;color:#930;}
+.info_content{padding:0 5px;}
+.info_content ul{margin:0;padding:0;}
+.info_content ul li{border-bottom:1px dashed #ccc;height:30px;line-height:30px;list-style:inside;}
+.firm{margin:10px;}
+.firm h4{color:#930;height:30px;line-height:30px;}
+.firm_content{}
+.firm_logo{float:left;width:76px;height:76px;border:1px solid #e5d5b6;}
+.firm_text{line-height:25px;float:right;margin-left:10px;width:140px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="company-package" extends="struts-xgx" namespace="/">
+	
+			<!--团体消费进货验收信息-->
+		<action name="teamBuyAcceptanceInfo_*" class="teamBuyAcceptanceInfoAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		
+			<!--考核项目-->
+		<action name="assessItem_*" class="assessItemAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+			<!--企业考核明细 -->
+		<action name="assessDetail_*" class="assessDetailAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+			<!--企业考核 -->
+		<action name="comAssess_*" class="comAssessAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+	
+		<!--资质证书-->
+		<action name="zizhi_*" class="zizhiAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<!--资质证书审核-->
+		<action name="zizhiAudit_*" class="zizhiAuditRecordAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<action name="mbzizhi_*" class="zizhiAction" method="{1}"> 
+			<result name="json"></result>
+		</action>
+		
+		<!--资质证书附件-->
+		<action name="zizhiAppendix_*" class="zizhiAppendixAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		
+		<!--通报企业信息-->
+		<action name="tongbao_*" class="tongbaoAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+	
+	
+		<!--生产信息-->
+		<action name="production_*" class="productionAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<action name="mbproduction_*" class="productionAction" method="{1}"> 
+			<result name="json"></result>
+		</action>
+		
+		<!--生产信息附件-->
+		<action name="productionAppendix_*" class="productionAppendixAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<!--企业审核记录-->
+		<action name="auditRecord_*" class="auditRecordAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<!--企业监管信息-->
+		<action name="supervise_*" class="superviseAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<!--企业评价信息-->
+		<action name="evaluation_*" class="evaluationAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+	
+		<!--企业监管信息-二维码扫描查询-->
+		<action name="mbsupervise_*" class="websuperviseAction" method="{1}"> 
+			<result name="json"></result>
+		</action>
+		
+		<!--级别-->
+		<action name="level_*" class="levelAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+	
+		<!--操作指引-->
+		<action name="useguide_*" class="useguideAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<!-- 溯源统计 -->
+		<action name="scanCount_*" class="scanCountAction" method="{1}"> 
+			<result name="json"></result>
+		</action>
+		
+		<!-- 投入品库存表 -->
+		<action name="agriInventory_*" class="agriInventoryAction" method="{1}"> 
+			<result name="json"></result>
+		</action>
+		
+		<action name="agriInventoryRecord_*" class="agriInventoryRecordAction" method="{1}"> 
+			<result name="json"></result>
+		</action>
+		
+		<action name="validCode_*" class="validCodeAction" method="{1}"> 
+			<result name="json"></result>
+		</action>
+		
+		<action name="validCodeRecord_*" class="validCodeRecordAction" method="{1}"> 
+			<result name="json"></result>
+		</action>
+		
+		
+		<!--企业信息-->
+		<action name="company_*" class="companyAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<!--企业用户信息-->
+		<action name="companyUser_*" class="companyUserAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		
+		<!--企业信息-->
+		<action name="webcompany_*" class="companyAction" method="{1}"> 
+			<result name="json"></result>
+		</action>
+		
+		<!--企业用户信息-->
+		<action name="webcompanyUser_*" class="companyUserAction" method="{1}"> 
+			<result name="json"></result>
+		</action>
+		
+		
+		<!-- web企业注册  -->
+		<action name="compregister" class="com.hontek.company.action.CompanyAction" method="register"> 
+			<result name="json"></result>
+		</action>
+		
+		<!-- web企业用户登陆 -->
+		<action name="complogin" class="com.hontek.company.action.CompanyUserAction" method="comlogin"> 
+			<result name="companyLogin" type="redirect">/company/main.jsp</result>
+			<result name="companyToLogin">/company/login.jsp</result>
+			<interceptor-ref name="defaultStack" />
+		</action>
+		
+		<!-- web企业用户退出 -->
+		<action name="complogout" class="com.hontek.company.action.CompanyUserAction" method="complogout"> 
+			<result name="login">/company/login.jsp</result>
+			<interceptor-ref name="defaultStack" />
+		</action>
+		
+	</package>
+
+</struts>
+
+

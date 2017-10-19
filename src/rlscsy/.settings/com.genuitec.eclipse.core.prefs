@@ -1,0 +1,5 @@
+#Fri Jul 24 11:09:10 CST 2015
+eclipse.preferences.version=1
+validator.Checked=WebRoot/echars/asset/js/google-code-prettify.js,WebRoot/static
+validator.Revalidate=true
+validator.Unchecked=

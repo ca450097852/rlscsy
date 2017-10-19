@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--  -->
+<hibernate-mapping>
+    <class name="com.hontek.enforce.pojo.LawLog" table="TS_LAWLOG">
+        <id name="logId" >
+            <column name="LOG_ID"/>
+            <generator class="assigned" />
+         </id>
+        <property name="entName" >
+            <column name="ENT_NAME" />
+        </property>
+        <property name="lawTime">
+            <column name="LAW_TIME"/>
+        </property>
+       <property name="addr" >
+            <column name="ADDR"/>
+        </property>
+        <property name="comId" >
+            <column name="COM_ID"/>
+        </property>
+        <property name="lawResult" >
+            <column name="LAW_RESULT"/>
+        </property>
+           <property name="userId" >
+            <column name="USER_ID"/>
+        </property>
+        <property name="logApp" >
+            <column name="LOG_APP"/>
+        </property>
+        <property name="createTime" >
+            <column name="CREATE_TIME"/>
+ 		</property>
+ 		<property name="logNo" >
+            <column name="LOG_NO"/>
+ 		</property>
+ 		
+    </class>
+</hibernate-mapping>
+

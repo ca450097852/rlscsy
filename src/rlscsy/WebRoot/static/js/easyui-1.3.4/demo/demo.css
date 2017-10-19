@@ -1,0 +1,45 @@
+*{
+	font-size:12px;
+}
+body {
+    font-family:helvetica,tahoma,verdana,sans-serif;
+    padding:20px;
+    font-size:13px;
+    margin:0;
+}
+h2 {
+    font-size:18px;
+    font-weight:bold;
+    margin:0;
+    margin-bottom:15px;
+}
+.demo-info{
+	background:#FFFEE6;
+	color:#8F5700;
+	padding:12px;
+}
+.demo-tip{
+	width:16px;
+	height:16px;
+	margin-right:8px;
+	float:left;
+}
+
+
+.formtable {
+    background-color: #b8cce2;
+    width: 100%;
+}
+
+.form_label {
+    color: #5e7595;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+    background-color: #eaf2ff;	    
+}
+
+.form_value {
+    background-color: #ffffff;
+    padding: 5px;
+}	

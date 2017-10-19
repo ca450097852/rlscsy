@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="info-package" extends="struts-xgx" namespace="/">
+		<!-- 信息-->
+		<action name="info_*" class="com.hontek.info.action.InfoAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+	
+		<!-- 信息分类-->
+		<action name="infotype_*" class="com.hontek.info.action.InfoTypeAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<!-- 咨询临时表 -->
+		<action name="infotemp_*" class="com.hontek.info.action.InfotempAction" method="{1}">
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+	</package>
+
+</struts>
+
+

@@ -1,0 +1,58 @@
+.text-black{ color:#212121;}
+
+.x-cards{padding-top:0;}
+.panel{ border:0;}
+.panel.panel-default{ margin-bottom:10px;}
+.row{ margin:0;}
+.x-col{ padding :2px;}
+
+.tb-nopadding{ padding:0;}
+.btn i{ font-size:20px;}
+.btn span{ font-size:12px; font-weight:normal;}
+
+.user-btn i{font-size:25px; }
+
+.tb-img1{ width:100%; height:133px;}
+.tb-img5{ width:70%;}
+.tb-img6{ width:100%;}
+
+/*顶部titlebar*/
+.x-titlebar{ background-color:#00AA00;}
+
+
+/*导航栏目*/
+.tb-menu.table > tbody > tr > td{ border:0;}
+.tb-menu.table > tbody > tr > td{ padding-left:0; padding-right:0;font-size: 12px}
+
+.tb-line-right{ border-right:1px solid rgba(90, 90, 90, 0.05);}
+
+/*底部*/
+.btn-group{ background-color:#fff;}
+.x-card.btn-group .btn.active{ color:#ff4400;}
+.btn-group .btn i{ font-size:30px; padding-bottom:0;}
+
+/*内容*/
+.tb-twoColList.col-xs-6{ padding:10px;}
+.tb-twoColList.col-xs-6 h5{ height:45px; overflow:hidden;}
+
+.x-nopadding{ padding-left:0; padding-right:0;}
+.x-nomargin{ margin-left:0; margin-right:0;}
+
+.media {
+    margin-top: 0px;
+}
+/*删除线*/
+.x-delline{ text-decoration:line-through;}
+
+/*店标显示*/
+.x-found{ position:relative;}
+.x-found .x-found-logo{ position:absolute; top:15px; left:10px;}
+.x-found .x-found-logo img{ margin-right:10px;}
+
+.img-project{
+	height: 120px;width: 100%;
+}
+
+.panel-body {
+    padding: 5px;
+}

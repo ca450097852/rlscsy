@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/aop  http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+    http://www.springframework.org/schema/tx  http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+	<bean id="marketInInfoBaseAction" class="com.hontek.jcmanager.action.MarketInInfoBaseAction" scope="prototype">
+		<property name="marketInInfoBaseService" ref="marketInInfoBaseService" />
+	</bean>
+	
+	<bean id="marketInInfoDetailAction" class="com.hontek.jcmanager.action.MarketInInfoDetailAction" scope="prototype">
+		<property name="marketInInfoDetailService" ref="marketInInfoDetailService" />
+	</bean>
+	
+	<bean id="qmarketDetectionInfoAction" class="com.hontek.jcmanager.action.QmarketDetectionInfoAction" scope="prototype">
+		<property name="qmarketDetectionInfoService" ref="qmarketDetectionInfoService" />
+	</bean>
+	
+	<bean id="retailMarketTranInfoSummAction" class="com.hontek.jcmanager.action.RetailMarketTranInfoSummAction" scope="prototype">
+		<property name="retailMarketTranInfoSummService" ref="retailMarketTranInfoSummService" />
+	</bean>
+	
+	<bean id="meatOutInfoBaseAction" class="com.hontek.jcmanager.action.MeatOutInfoBaseAction" scope="prototype">
+		<property name="meatOutInfoBaseService" ref="meatOutInfoBaseService" />
+	</bean>
+	
+	<bean id="meatOutInfoDetailAction" class="com.hontek.jcmanager.action.MeatOutInfoDetailAction" scope="prototype">
+		<property name="meatOutInfoDetailService" ref="meatOutInfoDetailService" />
+	</bean>
+	
+	<!-- 生猪进厂表 -->
+	<bean id="animalInInfoAction" class="com.hontek.jcmanager.action.AnimalInInfoAction" scope="prototype">
+		<property name="animalInInfoService" ref="animalInInfoService" />
+	</bean>
+	<!-- 屠宰厂检疫检验信息 -->
+	<bean id="quarantineInfoAction" class="com.hontek.jcmanager.action.QuarantineInfoAction" scope="prototype">
+		<property name="quarantineInfoService" ref="quarantineInfoService" />
+	</bean>
+</beans>

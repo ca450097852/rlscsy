@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/aop  http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+    http://www.springframework.org/schema/tx  http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+    <!-- 资质证书 -->
+	<bean id="zizhiAction" class="com.hontek.company.action.ZizhiAction" scope="prototype">
+		<property name="zizhiServiceInter" ref="zizhiServiceInter" />
+	</bean>
+	
+	<!-- 资质证书审核 -->
+	<bean id="zizhiAuditRecordAction" class="com.hontek.company.action.ZizhiAuditRecordAction" scope="prototype">
+		<property name="zizhiAuditRecordServiceInter" ref="zizhiAuditRecordServiceInter" />
+		<property name="enterprseService" ref="enterprseService" />
+		
+	</bean>
+	
+	<!-- 资质证书附件 -->
+	<bean id="zizhiAppendixAction" class="com.hontek.company.action.ZizhiAppendixAction" scope="prototype">
+		<property name="zizhiAppendixServiceInter" ref="zizhiAppendixServiceInter" />
+	</bean>
+	
+	<!-- 通报企业 -->
+	<bean id="tongbaoAction" class="com.hontek.company.action.TongbaoAction" scope="prototype">
+		<property name="tongbaoServiceInter" ref="tongbaoServiceInter" />
+	</bean>
+	
+	<!-- 生产信息 -->
+	<bean id="productionAction" class="com.hontek.company.action.ProductionAction" scope="prototype">
+		<property name="productionServiceInter" ref="productionServiceInter" />
+	</bean>
+	
+	<!-- 生产信息附件 -->
+	<bean id="productionAppendixAction" class="com.hontek.company.action.ProductionAppendixAction" scope="prototype">
+		<property name="productionAppendixServiceInter" ref="productionAppendixServiceInter" />
+	</bean>	
+	
+	<!-- 企业审核记录 -->
+	<bean id="auditRecordAction" class="com.hontek.company.action.AuditRecordAction" scope="prototype">
+		<property name="auditRecordServiceInter" ref="auditRecordServiceInter" />
+	</bean>	
+	
+	
+	<!-- 企业监管信息 -->
+	<bean id="superviseAction" class="com.hontek.company.action.SuperviseAction" scope="prototype">
+		<property name="superviseServiceInter" ref="superviseServiceInter" />
+	</bean>	
+	
+	<!-- 企业监管信息 -->
+	<bean id="websuperviseAction" class="com.hontek.company.action.WebSuperviseAction" scope="prototype">
+		<property name="superviseServiceInter" ref="superviseServiceInter" />
+	</bean>
+	
+	<!-- 企业评价信息 -->
+	<bean id="evaluationAction" class="com.hontek.company.action.EvaluationAction" scope="prototype">
+		<property name="evaluationServiceInter" ref="evaluationServiceInter" />
+	</bean>
+	
+	<!-- 级别 -->
+	<bean id="levelAction" class="com.hontek.company.action.LevelAction" scope="prototype">
+		<property name="levelService" ref="levelServiceInter" />
+	</bean>
+	
+	<!-- 资质类型 -->
+	<bean id="zizhiTypeAction" class="com.hontek.company.action.ZizhiTypeAction" scope="prototype">
+		<property name="zizhiTypeService" ref="zizhiTypeServiceInter" />
+	</bean>
+	
+	<!-- 指引 -->
+	<bean id="useguideAction" class="com.hontek.company.action.UseguideAction" scope="prototype">
+		<property name="useguideServiceInter" ref="useguideServiceInter" />
+	</bean>
+	
+	
+	<!-- 溯源统计 -->
+	<bean id="scanCountAction" class="com.hontek.company.action.ScanCountAction" scope="prototype">
+		<property name="scanCountServiceInter" ref="scanCountServiceInter" />
+	</bean>
+	
+	<!-- 投入品库存表 -->
+	<bean id="agriInventoryAction" class="com.hontek.company.action.AgriInventoryAction" scope="prototype">
+		<property name="agriInventoryServiceInter" ref="agriInventoryServiceInter" />
+	</bean>
+	
+	<bean id="agriInventoryRecordAction" class="com.hontek.company.action.AgriInventoryRecordAction" scope="prototype">
+		<property name="agriInventoryRecordServiceInter" ref="agriInventoryRecordServiceInter" />
+	</bean>
+	<!-- 二维码验证表 -->
+	<bean id="validCodeAction" class="com.hontek.company.action.ValidCodeAction" scope="prototype">
+		<property name="validCodeService" ref="validCodeService" />
+	</bean>
+	
+	<bean id="validCodeRecordAction" class="com.hontek.company.action.ValidCodeRecordAction" scope="prototype">
+		<property name="validCodeRecordServiceInter" ref="validCodeRecordServiceInter" />
+		<property name="enterprseService" ref="enterprseService" />
+		<property name="proTypeQrcodeService" ref="proTypeQrcodeService" />
+	</bean>
+	
+	
+	<!-- 企业 -->
+	<bean id="companyAction" class="com.hontek.company.action.CompanyAction" scope="prototype">
+		<property name="companyServiceInter" ref="companyServiceInter" />
+	</bean>
+	
+	
+	<!-- 企业用户 -->
+	<bean id="companyUserAction" class="com.hontek.company.action.CompanyUserAction" scope="prototype">
+		<property name="companyUserServiceInter" ref="companyUserServiceInter" />
+		<property name="companyServiceInter" ref="companyServiceInter" />
+	</bean>
+	
+	<!-- 考核项目 -->
+	<bean id="assessItemAction" class="com.hontek.company.action.AssessItemAction" scope="prototype">
+		<property name="assessItemServiceInter" ref="assessItemServiceInter" />
+	</bean>
+	<!-- 企业考核明细 -->
+	<bean id="assessDetailAction" class="com.hontek.company.action.AssessDetailAction" scope="prototype">
+		<property name="assessDetailServiceInter" ref="assessDetailServiceInter" />
+		<property name="comAssessServiceInter" ref="comAssessServiceInter" />
+	</bean>
+	<!-- 企业考核 -->
+	<bean id="comAssessAction" class="com.hontek.company.action.ComAssessAction" scope="prototype">
+		<property name="comAssessServiceInter" ref="comAssessServiceInter" />
+		<property name="assessDetailServiceInter" ref="assessDetailServiceInter" />
+	</bean>
+	
+	
+	<!-- 团体消费进货验收信息 -->
+	<bean id="teamBuyAcceptanceInfoAction" class="com.hontek.company.action.TeamBuyAcceptanceInfoAction" scope="prototype">
+		<property name="teamBuyAcceptanceInfoServiceInter" ref="teamBuyAcceptanceInfoServiceInter" />
+	</bean>
+</beans>

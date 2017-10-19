@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+二维码验证码生成记录表
+-->
+<hibernate-mapping>
+    <class name="com.hontek.company.pojo.ValidCodeRecord" table="tb_valid_code_record">
+        <id name="vrId">
+            <column name="vr_id" />
+            <generator class="assigned"/>
+        </id>
+        <property name="dimenno" column="dimenno" />
+		<property name="createCount" column="createCount" />
+		<property name="creatTime" column="creatTime" />
+		<property name="remarks" column="remarks" />
+    </class>
+</hibernate-mapping>

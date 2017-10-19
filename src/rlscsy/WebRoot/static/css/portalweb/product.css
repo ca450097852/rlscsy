@@ -1,0 +1,38 @@
+
+/*中间样式*/
+.CENTER{margin:30px auto 0 auto;padding:0 10px;width:1000px;}
+.CENTER_content{margin-top:10px;}
+.CENTER_content_left{width:725px;float:left;}
+.product_title{background:url("../../image/portalweb/title_bg.png") repeat-x;height:26px;line-height:26px;width:705px;padding:0 10px}
+.product_title font{color:#ff6600;font-weight:bold;}
+.product_list{margin-top:10px;}
+.product{border:1px solid #e5d5b6;width:355px;border-radius:5px;padding-top:10px;float:left;margin-bottom:10px;}
+.product h4{font-size:14px;height:30px;linee-height:30px;padding:0 10px;}
+.CPC{height:30px;width:35px;background:url("../../image/portalweb/canvas.png") no-repeat 0 0px;display:block;float:right;}
+.CPC_img{border:1px solid #a4a4a4;height:120px;padding-top:10px;width:200px;z-index:11;margin-left:138px;text-align:center;position:absolute;filter:alpha(opacity=60);}
+.CPC_img img{width:100px;height:100px;}
+.CPC_hover{height:30px;width:59px;background:url("../../image/portalweb/bg_index_04.png") no-repeat 0 0;display:block;float:right;}
+
+.product_img{padding:0 10px;}
+.product_text{padding:0 10px;}
+.product_text p{height:30px;line-height:30px;}
+.product_time{background:url("../../image/portalweb/bg_index_05.png") repeat-x -55px center;height:55px;padding:0 10px;line-height:55px;}
+.product_time_txt{float:left;font-weight:bold;}
+.btn_pro_go{float:right;color:#fff;margin-top:15px;}
+.mar_right{margin-right:10px;}
+.page{text-align:center;line-height:30px;}
+.btn{background:url("../../image/portalweb/bg_index_09.png") no-repeat;width:82px;height:33px;line-height:33px;text-align:center;}
+
+.CENTER_content_right{float:right;width:265px;}
+.info{border:1px solid #e5d5b6;padding:5px;border-radius:5px;margin-bottom:10px;}
+.info_title{border-bottom:1px dashed #930;height:30px;line-height:30px;}
+.info_title font{color:#F60;font-weight:bold;}
+.info_title span{float:right;color:#930;}
+.info_content{padding:0 5px;}
+.info_content ul{margin:0;padding:0;}
+.info_content ul li{border-bottom:1px dashed #ccc;height:30px;line-height:30px;list-style:inside;}
+.firm{margin:10px;}
+.firm h4{color:#930;height:30px;line-height:30px;}
+.firm_content{}
+.firm_logo{float:left;width:76px;height:76px;border:1px solid #e5d5b6;}
+.firm_text{line-height:25px;float:right;margin-left:10px;width:140px;}

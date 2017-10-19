@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+	http://www.springframework.org/schema/context 
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/aop  
+	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+    http://www.springframework.org/schema/tx  
+	http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+	<!-- 资质证书 -->
+	<bean id="zizhiDao" class="com.hontek.company.dao.ZizhiDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 资质证书审核 -->
+	<bean id="zizhiAuditRecordDao" class="com.hontek.company.dao.ZizhiAuditRecordDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 资质证书附件 -->
+	<bean id="zizhiAppendixDao" class="com.hontek.company.dao.ZizhiAppendixDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 通报企业 -->
+	<bean id="tongbaoDao" class="com.hontek.company.dao.TongbaoDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 生产信息 -->
+	<bean id="productionDao" class="com.hontek.company.dao.ProductionDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 生产信息附件 -->
+	<bean id="productionAppendixDao" class="com.hontek.company.dao.ProductionAppendixDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 企业二维码 -->
+	<bean id="entQrcodeDao" class="com.hontek.company.dao.EntQrcodeDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 企业审核控制 -->
+	<bean id="auditCtrlDao" class="com.hontek.company.dao.AuditCtrlDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+		
+	<!-- 企业审核记录 -->
+	<bean id="auditRecordDao" class="com.hontek.company.dao.AuditRecordDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 企业监管信息 -->
+	<bean id="superviseDao" class="com.hontek.company.dao.SuperviseDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 企业评价信息 -->
+	<bean id="evaluationDao" class="com.hontek.company.dao.EvaluationDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 级别 -->
+	<bean id="levelDao" class="com.hontek.company.dao.LevelDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 资质类型表 -->
+	<bean id="zizhiTypeDao" class="com.hontek.company.dao.ZizhiTypeDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 产品补充信息表 -->
+	<bean id="productInfoDao" class="com.hontek.company.dao.ProductInfoDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+		
+	<!-- 操作指引信息表 -->
+	<bean id="useguideDao" class="com.hontek.company.dao.UseguideDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 溯源统计表 -->
+	<bean id="scanCountDao" class="com.hontek.company.dao.ScanCountDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 投入品库存表 -->
+	<bean id="agriInventoryDao" class="com.hontek.company.dao.AgriInventoryDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 投入品出库记录表 -->
+	<bean id="agriInventoryRecordDao" class="com.hontek.company.dao.AgriInventoryRecordDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 二维码验证表 -->
+	<bean id="validCodeDao" class="com.hontek.company.dao.ValidCodeDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="validCodeRecordDao" class="com.hontek.company.dao.ValidCodeRecordDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	
+	<!-- 企业 -->
+	<bean id="companyDao" class="com.hontek.company.dao.CompanyDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	
+	<!-- 企业用户 -->
+	<bean id="companyUserDao" class="com.hontek.company.dao.CompanyUserDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 考核项目分类 -->
+	<bean id="assessItemDao" class="com.hontek.company.dao.AssessItemDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<!-- 企业考核明细 -->
+	<bean id="assessDetailDao" class="com.hontek.company.dao.AssessDetailDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<!-- 企业考核 -->
+	<bean id="comAssessDao" class="com.hontek.company.dao.ComAssessDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 团体消费进货验收信息 -->
+	<bean id="teamBuyAcceptanceInfoDao" class="com.hontek.company.dao.TeamBuyAcceptanceInfoDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+</beans>
+

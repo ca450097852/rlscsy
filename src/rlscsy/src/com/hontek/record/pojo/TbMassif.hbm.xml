@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+   	地块信息实体
+-->
+<hibernate-mapping>
+    <class name="com.hontek.record.pojo.TbMassif" table="tb_massif">
+        <id name="maId" >
+            <column name="ma_id"/>
+            <generator class="assigned" />
+         </id>
+        <property name="ptqId" > <column name="ptq_id" /></property>
+        <property name="ptaId" ><column name="pta_id" /></property>
+        <property name="maName" ><column name="ma_name"/></property>     
+         <property name="maAcreage" ><column name="ma_acreage"/></property>                  
+        <property name="startTime" ><column name="start_time"/></property>        
+        <property name="getTime" ><column name="get_time"/></property>            
+         <property name="state" ><column name="state"/></property>        
+        <property name="maImg" ><column name="ma_img"/></property>        
+    </class>
+</hibernate-mapping>
+

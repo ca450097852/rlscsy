@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+	http://www.springframework.org/schema/context 
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/aop  
+	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+    http://www.springframework.org/schema/tx  
+	http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+	<!-- 投入品供应商信息 -->
+	<bean id="agriSupplierDao" class="com.hontek.agri.dao.AgriSupplierDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<!-- 投入品禁用信息 -->
+	<bean id="agriDisDao" class="com.hontek.agri.dao.AgriDisDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<!-- 预警信息记录 -->
+	<bean id="warningDao" class="com.hontek.agri.dao.WarningDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+</beans>
+

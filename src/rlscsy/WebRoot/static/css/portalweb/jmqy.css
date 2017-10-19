@@ -1,0 +1,27 @@
+
+/*中间样式*/
+.CENTER{margin:30px auto 0 auto;padding:0 10px;width:1000px;}
+.CENTER_top{}
+
+.CENTER_content{margin-top:10px;}
+.CENTER_content_left{width:725px;float:left;}
+.product_title{background:url("../../image/portalweb/title_bg.png") repeat-x;height:26px;line-height:26px;width:705px;padding:0 10px}
+.product_title font{color:#ff6600;font-weight:bold;}
+.page{text-align:center;height:30px;line-height:30px;padding-top:10px;}
+.qiye_list{}
+.qiye_list .firm{margin:10px;border-bottom:1px dashed #ccc;padding-bottom:10px;}
+.qiye_list .firm h4{color:#930;height:30px;line-height:30px;}
+.qiye_list .firm_content{}
+.qiye_list .firm_logo{float:left;width:76px;height:76px;border:1px solid #e5d5b6;}
+.qiye_list .firm_text{width:600px;line-height:25px;float:left;margin-left:20px;}
+
+.CENTER_content_right{float:right;width:265px;}
+.info{border:1px solid #e5d5b6;padding:5px;border-radius:5px;margin-bottom:10px;}
+.info_title{border-bottom:1px dashed #930;height:30px;line-height:30px;}
+.info_title font{color:#F60;font-weight:bold;}
+.info_title span{float:right;color:#930;}
+.info_content{padding:0 5px;}
+.info_content ul{margin:0;padding:0;}
+.info_content ul li{border-bottom:1px dashed #ccc;height:30px;line-height:30px;list-style:inside;}
+
+

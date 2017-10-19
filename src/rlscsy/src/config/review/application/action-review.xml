@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/aop  http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+    http://www.springframework.org/schema/tx  http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+    <!-- 配置对应的Action  以及该Action里面对应的Service -->
+    <!-- 生产类型 -->
+    <bean id="proTypeAction" class="com.hontek.review.action.ProTypeAction" scope="prototype">
+    	<property name="proTypeService" ref="proTypeService"/>
+    </bean>
+    <!-- 产品 -->
+    <bean id="productAction" class="com.hontek.review.action.ProductAction" scope="prototype">
+    	<property name="enterpriseService" ref="enterprseService"/>
+    	<property name="productServiceInter" ref="productService"/>
+    </bean>
+    
+    <!-- 产品批次 -->
+	<bean id="proBatchAction" class="com.hontek.review.action.ProBatchAction" scope="prototype">
+		<property name="proBatchServiceInter" ref="proBatchServiceInter" />
+	</bean>
+	
+	<!-- 生产产地 -->
+	<bean id="proAreaAction" class="com.hontek.review.action.ProAreaAction" scope="prototype">
+		<property name="proAreaServiceInter" ref="proAreaServiceInter" />
+	</bean>
+
+	<!-- 产品种源 -->
+	<bean id="proSeedAction" class="com.hontek.review.action.ProSeedAction" scope="prototype">
+		<property name="proSeedServiceInter" ref="proSeedServiceInter" />
+	</bean>	
+    
+    
+    <!-- 溯源信息 -->
+    <bean id="traceAction" class="com.hontek.review.action.TraceAction" scope="prototype">
+    	<property name="traceService" ref="traceService"/>
+    </bean>
+    
+    <!-- 产品图片 -->
+    <bean id="productAppendixAction" class="com.hontek.review.action.ProductAppendixAction" scope="prototype">
+    	<property name="productAppendixService" ref="productAppendixService"/>
+    </bean>
+    
+    <!-- 附件 -->
+    <bean id="traceAppdixAction" class="com.hontek.review.action.TraceAppdixAction" scope="prototype">
+    	<property name="traceAppdixService" ref="traceAppdixService"/>
+    </bean>
+     <!-- 种植喂养表 -->
+    <bean id="plantRaiseAction" class="com.hontek.review.action.PlantRaiseAction" scope="prototype">
+    	<property name="plantRaiseService" ref="plantRaiseService"/>
+    </bean>
+    
+     <!-- 防疫表、植保表 -->
+    <bean id="preventionAction" class="com.hontek.review.action.PreventionAction" scope="prototype">
+    	<property name="preventionService" ref="preventionService"/>
+    </bean>
+    
+     <!-- 加工包装 -->
+    <bean id="processAction" class="com.hontek.review.action.ProcessAction" scope="prototype">
+    	<property name="processService" ref="processService"/>
+    </bean>
+    
+     <!-- 仓储运输 -->
+    <bean id="storeTransportAction" class="com.hontek.review.action.StoreTransportAction" scope="prototype">
+    	<property name="storeTransportService" ref="storeTransportService"/>
+    </bean>
+    
+    <!-- 检验报告 -->
+    <bean id="proCheckAction" class="com.hontek.review.action.ProCheckAction" scope="prototype">
+    	<property name="proCheckService" ref="proCheckService"/>
+    </bean>
+    
+</beans>

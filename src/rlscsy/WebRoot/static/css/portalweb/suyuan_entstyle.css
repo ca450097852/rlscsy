@@ -1,0 +1,87 @@
+@charset "GBK"; 
+html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,em,font,img,small,strong,b,u,i,s,dl,dt,dd,ol,ul,li,
+	fieldset,form,label{padding:0px; margin:0px;}
+body{color:#606060; margin:0;padding:0;font-family: Tahoma;font-size:12px;}
+h2,h3{font:bold 14px 'Î¢ÈíÑÅºÚ'}
+blockquote, q{quotes: none}
+blockquote:before, blockquote:after,q:before, q:after{content:''content: none}
+
+
+/* cssÍ¨ÓÃÉèÖÃ begin */
+a{color:#606060;text-decoration: none;cursor:pointer;} /* Î´·ÃÎÊµÄÁ´½Ó */
+img{border:0px;margin:0;padding:0;vertical-align:middle; }
+.fl{float:left;}
+.fr{float:right;}
+.clear{clear:both;height:0px;overflow:hidden;}
+
+ol,ul,nav,nav ul{list-style:none}
+em,i{font-style:normal;}
+.dsn{display:none;}
+.fl{float:left;}
+.fr{float:right;}
+.clear{clear:both}
+.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;line-height:0;}
+.clearfix{zoom:1}
+.vscape { clear: both; overflow: hidden; zoom: 1; height: 0; font-size: 0; }
+.mt5{margin-top:5px;}
+.mt10{margin-top:10px;}
+.mt15{margin-top:15px;}
+.mt20{margin-top:20px;}
+.mt30{margin-top:30px;}
+.mt40{margin-top:40px;}
+.ml15{margin-left:15px;}
+.pl10{padding-left:10px;}
+.oranger{color:#e65316;}
+.red{color:#d60101;}
+.blue{color:#006cb0;}
+.green{color:#259400;}
+.f14{font-size:14px;}
+img{ vertical-align:top;}
+
+/*¹«ÓÃÄ£¿é01*/
+.c_main01{border:#e27a36 solid 1px;}
+.c_main01 .h_tit{height:31px;background:#f59133;position:relative;}/*66a32a*/
+.c_main01 .h_tit h2{width:185px;height:46px;padding-left:15px;font:bold 18px/46px "\5FAE\8F6F\96C5\9ED1","Î¢ÈíÑÅºÚ","\9ED1\4F53";color:#fff;position:absolute;top:-8px;left:-1px;}
+
+.c_main01 .h_tit span{width:100px;height:35px;padding-right:15px;font:bold 18px/30px "\5FAE\8F6F\96C5\9ED1","Î¢ÈíÑÅºÚ","\9ED1\4F53";color:#fff;top:-8px;float: right;}
+
+.c_pm01{padding:15px 19px;background:#fff;}
+.c_pm01 .h3tit{padding:0 15px 15px;line-height:20px;font-size:14px;color:#8b531c;margin-bottom:12px;}
+
+/* ¹«ÓÃÄ£¿é02 */
+.c_main02{border:#e27a36 solid 1px;}
+.c_main02 .h_tit{height:31px;background:#f2ebdd;position:relative;}/*66a32a*/
+.c_main02 .h_tit h2{width:185px;height:46px;padding-left:15px;font:bold 18px/46px "\5FAE\8F6F\96C5\9ED1","Î¢ÈíÑÅºÚ","\9ED1\4F53";color:#8b531c;position:absolute;top:-8px;left:-1px;}
+
+.c_main02 .h_tit span{width:100px;height:35px;padding-right:15px;font:bold 18px/30px "\5FAE\8F6F\96C5\9ED1","Î¢ÈíÑÅºÚ","\9ED1\4F53";color:#fff;top:-8px;float: right;}
+
+.c_pm02{padding:15px 19px;background:#fff;}
+.c_pm02 .h3tit{padding:0 15px 15px;line-height:20px;font-size:14px;color:#8b531c;margin-bottom:12px;}
+
+
+/*Í¼Æ¬¹ö¶¯Ä£¿é01*/
+.picMoveX01 .bbtn{float:left;cursor:pointer;}
+.picMoveX01 .bbtn span{height:224px;width:15px;display:block;background:url(../../image/portalweb/preNext_btn.png) no-repeat;}
+.picMoveX01 .prevBtn span{background-position:-56px center;}
+.picMoveX01 .nextBtn span{background-position:-86px center;}
+.picMoveX01 .prevBtn span.last{background-position:4px center;}
+.picMoveX01 .nextBtn span.last{background-position:-26px center;}
+.picMoveX01 .picBox{width:860px;height:210px;float:left;overflow:hidden;position:relative;}
+.picMoveX01 .picBox ul{width:8580px;;}
+.picMoveX01 .picBox ul li{width:170px;height:190px;padding:13px;line-height:26px;text-align:center;margin:0 2px;float:left;display:inline;overflow:hidden;}
+
+/*ÄÚÈÝ¿ò*/
+.cz_zzry ul li{padding:1px;border:#e27a36 solid 1px;font-size:14px;margin-top:-1px;overflow:hidden;zoom:1; vertical-align:middle;}
+.cz_zzry ul li table{width:99%;}
+.cz_zzry ul li th{width:16px;height:100%;padding:10px;line-height:16px;font-weight:bold;}
+/*
+.cz_zzry ul li.bg01 th{background:#e27a36;color:#fff;}
+*/
+.cz_zzry ul li.bg01 th{background:#f2ebdd;color:#8b531c;}
+.cz_zzry ul li.bg02 th{background:#f2ebdd;color:#8b531c;}
+.cz_zzry ul li td{padding:5px 0 5px 12px;line-height:28px;text-align: left;}
+.cz_zzry ul li td p span{width:45%;display:inline-block;}
+
+.cz_zzry ul li tr.thstyle{background-color: #f2ebdd;font-weight: bold;}
+
+

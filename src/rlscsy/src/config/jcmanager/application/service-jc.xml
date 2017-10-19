@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+	http://www.springframework.org/schema/context 
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/aop  
+	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+    http://www.springframework.org/schema/tx  
+	http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+	<bean id="marketInInfoBaseService" class="com.hontek.jcmanager.service.impl.MarketInInfoBaseServiceImpl">
+		<property name="marketInInfoBaseDao" ref="marketInInfoBaseDao" />
+	</bean>
+	
+	<bean id="marketInInfoDetailService" class="com.hontek.jcmanager.service.impl.MarketInInfoDetailServiceImpl">
+		<property name="marketInInfoBaseDao" ref="marketInInfoBaseDao" />
+		<property name="marketInInfoDetailDao" ref="marketInInfoDetailDao" />
+	</bean>
+	
+	<bean id="qmarketDetectionInfoService" class="com.hontek.jcmanager.service.impl.QmarketDetectionInfoServiceImpl">
+		<property name="qmarketDetectionInfoDao" ref="qmarketDetectionInfoDao" />
+	</bean>
+	
+	<bean id="retailMarketTranInfoSummService" class="com.hontek.jcmanager.service.impl.RetailMarketTranInfoSummServiceImpl">
+		<property name="retailMarketTranInfoSummDao" ref="retailMarketTranInfoSummDao" />
+	</bean>
+	
+	<bean id="meatOutInfoBaseService" class="com.hontek.jcmanager.service.impl.MeatOutInfoBaseServiceImpl">
+		<property name="meatOutInfoBaseDao" ref="meatOutInfoBaseDao" />
+	</bean>
+	
+	<bean id="meatOutInfoDetailService" class="com.hontek.jcmanager.service.impl.MeatOutInfoDetailServiceImpl">
+		<property name="meatOutInfoBaseDao" ref="meatOutInfoBaseDao" />
+		<property name="meatOutInfoDetailDao" ref="meatOutInfoDetailDao" />
+	</bean>
+	
+	<!-- 生猪进厂表 -->
+	<bean id="animalInInfoService" class="com.hontek.jcmanager.service.impl.AnimalInInfoServiceImpl">
+		<property name="animalInInfoDao" ref="animalInInfoDao" />
+	</bean>
+	<!-- 屠宰厂检疫检验信息 -->
+	<bean id="quarantineInfoService" class="com.hontek.jcmanager.service.impl.QuarantineInfoServiceImpl">
+		<property name="quarantineInfoDao" ref="quarantineInfoDao" />
+	</bean>
+</beans> 

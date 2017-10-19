@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/aop  http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+    http://www.springframework.org/schema/tx  http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+    <!-- 配置对应的 DAO -->
+    <!-- 产品类型 -->
+    <bean id="proTypeDao" class="com.hontek.review.dao.ProTypeDao">
+    	<property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <!-- 产品 -->
+    <bean id="productDao" class="com.hontek.review.dao.ProductDao">
+    	<property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <!-- 产品批次 -->
+    <bean id="proBatchDao" class="com.hontek.review.dao.ProBatchDao">
+    	<property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+     <!-- 产品产地 -->
+    <bean id="proAreaDao" class="com.hontek.review.dao.ProAreaDao">
+    	<property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+     <!-- 产品种源 -->
+    <bean id="proSeedDao" class="com.hontek.review.dao.ProSeedDao">
+    	<property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <!-- 产品二维码信息 -->
+    <bean id="qrcodeDao" class="com.hontek.review.dao.ProqrcodeDao">
+    	<property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    <!-- 溯源信息表 -->
+    <bean id="traceDao" class="com.hontek.review.dao.TraceDao">
+    	<property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <!-- 产品图片 -->
+    <bean id="productAppendixDao" class="com.hontek.review.dao.ProductAppendixDao">
+    	<property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <!-- 附件 -->
+    <bean id="traceAppdixDao" class="com.hontek.review.dao.TraceAppdixDao">
+    	<property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+     <!-- 种植喂养表 -->
+    <bean id="plantRaiseDao" class="com.hontek.review.dao.PlantRaiseDao">
+    	<property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    <!-- 防疫表、植保表 -->
+    <bean id="preventionDao" class="com.hontek.review.dao.PreventionDao">
+    	<property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <!-- 加工包装 -->
+    <bean id="processDao" class="com.hontek.review.dao.ProcessDao">
+    	<property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <!-- 仓储运输 -->
+    <bean id="storeTransportDao" class="com.hontek.review.dao.StoreTransportDao">
+    	<property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <!-- 产品检验报告 -->
+    <bean id="proCheckDao" class="com.hontek.review.dao.ProCheckDao">
+    	<property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+</beans>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	
+	<!-- 修改文件上传大小限制 -->
+	<constant name="struts.multipart.maxSize" value="10000000"/>
+	 
+    <!--  -->
+	<package name="struts-xgx" extends="struts-default" namespace="/">
+		<interceptors>
+			<interceptor name="loginInterceptor"  class="com.hontek.comm.interceptor.LoginInterceptor" />
+			<interceptor-stack name="loginInterceptorStack">
+				<interceptor-ref name="loginInterceptor" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack> 
+			
+			<interceptor name="loginCompanyInterceptor"  class="com.hontek.comm.interceptor.CompanyLoginInterceptor" />
+			<interceptor-stack name="loginCompanyInterceptorStack">
+				<interceptor-ref name="loginCompanyInterceptor" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+			
+		</interceptors> 
+		<global-results>
+			<result name="login">
+				/jsp/login/login.jsp
+			</result>
+		</global-results>
+		
+		
+	</package>
+	
+	<package name="/default" extends="struts-xgx" namespace="/">
+		<action name="download" class="com.hontek.comm.base.DownLocationAction">
+           <result type="stream">
+                  <param name="contentType">application/octet-stream</param>
+                  <param name="inputName">inputStream</param>
+                  <param name="contentDisposition">attachment;filename="${outFileName}"</param>
+                  <param name="bufferSize">4096</param>
+           </result>
+           <result name="inputStreamError">inputStreamError.jsp</result>
+        </action>
+        
+        <action name="downloadFile" class="com.hontek.comm.base.DownLoadFileAction">
+           <result type="stream">
+                  <param name="contentType">application/octet-stream</param>
+                  <param name="inputName">inputStream</param>
+                  <param name="contentDisposition">attachment;filename="${outFileName}"</param>
+                  <param name="bufferSize">4096</param>
+           </result>
+           <result name="inputStreamError">inputStreamError.jsp</result>
+        </action>
+        
+        <action name="appdownload" class="downAppAction">
+           <result type="stream">
+                  <param name="contentType">application/octet-stream</param>
+                  <param name="inputName">inputStream</param>
+                  <param name="contentDisposition">attachment;filename="${outFileName}"</param>
+                  <param name="bufferSize">4096</param>
+           </result>
+           <result name="inputStreamError">inputStreamError.jsp</result>
+        </action>
+	</package>
+	
+	
+	
+	<!-- 系统管理 -->
+	<include file="config/sys/struts/struts-sys.xml"></include>
+	
+	<include file="config/review/struts/struts-review.xml"></include>
+	<!-- 企业管理 -->
+	<include file="config/company/struts/struts-company.xml"></include>
+	
+	<!-- 投入品 -->
+	<include file="config/agri/struts/struts-agri.xml"></include>
+	
+	<!-- 资讯 -->
+	<include file="config/info/struts/struts-info.xml"></include>
+	<!-- 投诉举报 -->
+	<include file="config/complaint/struts/struts-complaint.xml"></include>
+	
+	<!-- 档案 -->
+	<include file="config/record/struts/struts-record.xml"></include>
+	
+	<!-- 档案要素 -->
+	<include file="config/element/struts/struts-element.xml"></include>
+	
+	<include file="config/synchronous/struts/struts-interface.xml"></include>
+	
+	<!--门户网站 -->
+	<include file="config/portalweb/struts/struts-portalweb.xml"></include>
+	
+	<!--微信公众平台 -->
+	<include file="config/weixin/sturts/struts-weixin.xml"></include>
+	
+	<include file="config/jcmanager/struts/struts-jc.xml"></include>
+	<!-- 执法人员 -->
+	<include file="config/enforce/struts/struts-enforce.xml"></include>
+	
+	<constant name="struts.multipart.saveDir" value="/tmp"/>
+	
+	
+</struts>

@@ -1,0 +1,32 @@
+/*中间样式*/
+.CENTER{margin:30px auto 0 auto;padding:0 10px;width:1000px;}
+.CENTER_content{margin-top:10px;}
+.CENTER_content_left{width:725px;float:left;}
+.product_title{background:url("../../image/portalweb/title_bg.png") repeat-x;height:26px;line-height:26px;width:705px;padding:0 10px}
+.suyuan_content{margin:10px 0;}
+.con{width:225px;margin:10px 20px 10px 0;float:left;background:#fdfbf4;border:1px solid #e5d5b6;border-radius:5px;padding:15px;}
+.con h3{padding:10px 0;}
+.symSreach{margin:0 0 10px 0;}
+.symSreach input{height:23px;line-height:23px;width:215px;}
+.con_NO{padding:0 10px;}
+.con_NO i{float:left;margin:2px 5px;background:url("../../image/portalweb/bg_index_07.png") no-repeat;width:41px;height:34px;text-align:center;line-height:34px;cursor:pointer;font-style:normal;}
+.con_NO i.color{float:left;margin:2px 5px;background:url("../../image/portalweb/bg_index_08.png") no-repeat;width:41px;height:34px;text-align:center;line-height:34px;cursor:pointer;font-style:normal;color:#930;}
+.btn{background:url("../../image/portalweb/bg_index_09.png") no-repeat;width:82px;height:33px;line-height:33px;text-align:center;}
+.btn_symSreach{margin:10px auto;color:#930;}
+.suyuan_up_right{float:left;width:420px;padding:20px 0;}
+.suyuan_text{border:1px solid #e5d5b6;border-radius:5px;padding:10px;line-height:30px;min-height:206px;}
+
+
+.CENTER_content_right{float:right;width:265px;}
+.info{border:1px solid #e5d5b6;padding:5px;border-radius:5px;margin-bottom:10px;}
+.info_title{border-bottom:1px dashed #930;height:30px;line-height:30px;}
+.info_title font{color:#F60;font-weight:bold;}
+.info_title span{float:right;color:#930;}
+.info_content{padding:0 5px;}
+.info_content ul{margin:0;padding:0;}
+.info_content ul li{border-bottom:1px dashed #ccc;height:30px;line-height:30px;list-style:inside;}
+.firm{margin:10px;}
+.firm h4{color:#930;height:30px;line-height:30px;}
+.firm_content{}
+.firm_logo{float:left;width:76px;height:76px;border:1px solid #e5d5b6;}
+.firm_text{line-height:25px;float:right;margin-left:10px;width:140px;}

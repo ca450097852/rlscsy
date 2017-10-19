@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="jc-package" extends="struts-xgx" namespace="/">
+		<action name="marketInInfoBase_*" class="marketInInfoBaseAction" method="{1}"> 
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		<action name="webmarketInInfoBase_*" class="marketInInfoBaseAction" method="{1}"> 
+		</action>
+		
+		<action name="marketInInfoDetail_*" class="marketInInfoDetailAction" method="{1}"> 
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		<action name="webmarketInInfoDetail_*" class="marketInInfoDetailAction" method="{1}"> 
+		</action>
+		
+		<action name="qmarketDetectionInfo_*" class="qmarketDetectionInfoAction" method="{1}"> 
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		<action name="webqmarketDetectionInfo_*" class="qmarketDetectionInfoAction" method="{1}"> 
+		</action>
+		
+		<action name="retailMarketTranInfoSumm_*" class="retailMarketTranInfoSummAction" method="{1}"> 
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		<action name="webretailMarketTranInfoSumm_*" class="retailMarketTranInfoSummAction" method="{1}"> 
+		</action>
+		
+		<action name="meatOutInfoBase_*" class="meatOutInfoBaseAction" method="{1}"> 
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		<action name="webmeatOutInfoBase_*" class="meatOutInfoBaseAction" method="{1}"> 
+		</action>
+		
+		<action name="meatOutInfoDetail_*" class="meatOutInfoDetailAction" method="{1}"> 
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		<action name="webmeatOutInfoDetail_*" class="meatOutInfoDetailAction" method="{1}"> 
+		</action>
+		
+		<!-- 生猪进厂表 -->
+		<action name="animalInInfo_*" class="animalInInfoAction" method="{1}"> 
+			<!-- <interceptor-ref name="loginInterceptorStack" /> -->
+		</action>
+		<!-- 屠宰厂检疫检验信息 -->
+		<action name="quarantineInfo_*" class="quarantineInfoAction" method="{1}"> 
+			<!-- <interceptor-ref name="loginInterceptorStack" /> -->
+		</action>
+		
+	</package>
+
+</struts>
+
+

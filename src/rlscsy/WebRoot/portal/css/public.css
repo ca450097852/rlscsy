@@ -1,0 +1,173 @@
+@charset "utf-8";
+/* CSS Document */
+.mainbox{width:100%;}
+
+/**banner**/
+.banner{width:100%;height:285px;}
+.banner, .banner .focue_box{width:100%;height:285px;position:relative;text-align: center;}
+.banner .focue_box{overflow:hidden}
+.slider_con{position:absolute;left:0;top:0;z-index:10;}
+.banner .focue_box .slider_con{width:100%;height:285px;}
+.banner .focue_box .slider_con a{display:block}
+.banner .focue_box .slider_con img{display:block; margin:0 auto;}
+.banner .slider_btn{width:120px;height:30px;position:absolute;top:254px;left:47%;z-index:100;overflow:hidden}
+.banner .slider_btn li{width:11px;height:11px;border-radius:8px;background:#fff;border:2px #fff solid;float:left;margin-right:20px;cursor:pointer;overflow:hidden;text-indent:-9999px;}
+.banner .slider_btn li.click{background:#75b600;border:2px #75b600 solid;}
+
+.inner-banner{width:100%;height:200px;text-align:center;margin-bottom:40px;overflow:hidden;}
+
+.common-tt{width:100%;clear:both;overflow:hidden;}
+.common-tt h3{font-size:23px;color:#333;font-weight:normal;float:left;}
+.common-tt .en-txt{font-size:18px;color:#999;border-bottom:2px #75b600 solid;background:url(../images/hw.png) right 5px no-repeat;padding-right:92px;float:left;margin:3px 0 0 10px;display:inline;}
+
+/****溯源查询****/
+.l-cont{width:400px;}
+.side-main{width:518px;}
+.inquiry-item{position:relative;width:483px;height:269px;background-color:#f9f9f9; padding:0 0 0 35px}
+.input{background:#fff;border:1px #e3e3e3 solid;border-radius:4px;padding-left:10px;}
+.idr{width:430px;height:38px; line-height:38px;margin:30px auto 25px;}
+.inquiry-btn{width:310px;float:left;}
+.inquiry-btn li{float:left;}
+.inquiry-btn li a{width:50px;height:38px; line-height:38px;color:#666;font-family:'Verdana, Geneva, sans-serif', 'Microsoft Yahei';font-size:18px;text-align:center;background-color:#f6f6f6;border:1px #d3d3d3 solid;border-radius:3px;display:block;margin:0 25px 12px 0;}
+.inquiry-btn li a:hover{ text-decoration:none; background:#75b600;color:#fff;border:1px #64a300 solid;}
+.inquiry-btn li a.greenbtn{ background:#75b600;color:#fff;border:1px #64a300 solid;font-size:16px;}
+.inquiry-btn li a.greenbtn:hover, .big-greentbtn:hover{ background:#64a300;}
+
+.big-greentbtn{width:130px;height:144px;background:#75b600;color:#fff;border:1px #64a300 solid;text-align:center;line-height:30px;font-size:20px;border-radius:4px;cursor:pointer}
+.grey-line{width:100%;height:0px;border-bottom:1px #e8e8e8 solid;box-shadow:0 1px 2px #ececec;overflow:hidden}
+.search-h{padding:80px 0 0;min-height:150px;}
+
+
+/***用户登录与注册***/
+.contbg-box{height:340px;background:url(../images/contbg.jpg) 0 140px repeat-x;}
+.nav-list{width:330px;height:180px;float:left;position:relative;z-index:10;margin-top:60px;}
+.nav-list dt{width:88px;height:87px;position:absolute;top:-40px;left:115px;background:url(../images/icon.png) -312px -178px no-repeat;}
+.nav-list dd{width:100%; clear:both;}
+.nav-list dd a{width:330px;height:180px;line-height:190px;background:#75b600;display:block;color:#fff;font-size:25px;text-align:center;}
+.nav-list dd a:hover{background:#64a300;text-decoration:none;}
+.space{margin-left:23px; margin-right:23px;display:inline;}
+.txt-more{width:100%; clear:both; padding-top:20px;}
+.txt-more a{ color:#ccc; font-size:16px;}
+
+.more{width:32px;height:30px;color:#999;padding-left:30px;background:url(../images/icon.png) 0 -388px no-repeat;}
+
+
+
+/****最新畜牧类溯源信息****/
+.information-cont, .product-cont{width:100%;overflow:hidden;}
+.information-cont li{width:222px;height:365px;float:left;position:relative;margin:0 18px 18px;display:inlines}
+.information-cont li a{width:200px;padding:20px 11px 0;height:345px;background:#75b600;display:block;}
+.information-cont li a img{width:180px;border-radius:180px;display:block;margin:0 auto 20px;}
+.information-cont li a p{width:222px;height:365px;display:block;font-family:'simsun';font-size:12px;color:#fff;line-height:25px;}
+.information-cont li a:hover{text-decoration:none;background:#5a7b20}
+.information-cont li .more-check{width:222px;height:32px; display:block;position:absolute;bottom:0;}
+.information-cont li .more-check a{width:222px;height:32px;line-height:32px;padding:0;text-align:center;color:#fff; background:#68a100;}
+
+
+
+/****溯源产品推荐****/
+.product-cont li{width:240px;height:250px;font-size:12px;position:relative;background-color:#f2f2f2;font-family:'Simsun';float:left;margin:0 9px 25px;display:inline}
+.pro-pic{ position: relative;width:240px;height:155px;display: block}
+.pro-time{width:210px; padding:0 15px;height:29px;line-height:29px;color:#fff;background:url(../images/alphabg.png) 0 0 repeat-x;display:block; position:absolute; bottom:0px;}
+.pro-txt{padding:0 15px;width:210px;overflow:hidden}
+.pro-txt span{width:170px;height:40px;line-height:20px;overflow:hidden;color:#666; }
+.info-tt{width:210px;margin:8px auto 5px;height:30px;line-height:30px;overflow:hidden;font-family:'Microsoft Yahei';font-size:16px;}
+.info-tt a{color:#333;}
+.info-tt a:hover{color:#75b600;}
+
+
+/*******    
+Icon
+*******/
+.icon{display:block;background:url(../images/icon.png) 0 0 no-repeat;}
+.user{width:17px;height:30px;background-position:0 5px;margin:0 5px;}
+.check-link{width:160px;height:160px;float:left;}
+.check-link a{width:160px;height:160px;border-radius:160px;display:block;background:url(../images/icon.png) -265px 30px no-repeat;background-color:#75b600;}
+.check-link a:hover{background-color:#6eab00;}
+.ls-arrow, .rs-arrow{width:124px;height:269px;background-position:0 -100px;position: absolute;}
+.ls-arrow{left:-124px;}
+.rs-arrow{background-position:-140px -99px;right:-124px}
+.jg-icon, .entp-icon, .reg-icon{width:40px;height:47px;margin:20px auto 0;}
+.jg-icon{ background-position: -365px -296px;}
+.entp-icon{ background-position:-360px -378px;}
+.reg-icon{ background-position:-360px -450px;}
+.pro-more{width:32px;height:40px; line-height:30px;background-position:0 -436px; padding-top:10px;float:right;color:#fff; text-align:center; margin-top:12px;}
+.pro-more:hover{color:#fff; background-position:-50px -436px; text-decoration:none;}
+
+
+/*page*/
+.page{ clear:both;text-align:center;}
+.page span{display:inline-block;text-align:center;height:24px;line-height:24px;margin:0 4px;overflow:hidden;}
+.page span a{border:1px #ddd solid;background:#fff;height:22px;line-height:22px;padding:0 6px;display:block;float:left;display:inline;overflow:hidden;}
+.page span a:hover, .page span.pre a:hover, .page span.next a:hover, .page span a.hover{border:1px #ddd solid;background:#eee; text-decoration:none; color:#464646;}
+.page span.pre a, .page span.next a{border:1px #ddd solid;background:#fff;padding:0 6px;display:block;display:inline;}
+.page span .page_input{width:32px;height:22px; line-height:22px; border:1px #ddd solid;text-align:center;position:relative;top:0px;*top:-6px;}
+.page_btn{height:24px; line-height:24px;width:48px; background:#eee; border:none;text-align:center; color:#464646; font-weight:bold; cursor:pointer;position:relative;top:-6px;*top:-4px; margin-left:4px; left:0px;*left:4px;}
+.page span.num{position:relative;top:0px;*top:-5px;}
+
+
+/*查询样式*/
+.title_area{margin:45px 0;}
+.title_area_Bg{background:url("../images/hw.png") repeat-x;border-bottom:3px solid #75b600;height:14px;}
+.results_nav{padding:0 50px;}
+.results_nav a{border-radius:3px;padding:15px 25px;margin:0 10px;background:#363636;color:#fff;}
+.results_nav a.nav_check{background:#75b600;}
+.div_content{}
+.div_title{background:2xp scroll #75b600;}
+.line_bb span{padding:0 10px;border-bottom:2px solid #75b600;line-height:30px;}
+.line_bb{border-bottom:1px solid #ececec;margin-top:25px;}
+.wid400{width:400px;}
+.div_txt{text-indent:2em;line-height:30px;}
+.div_zi_img{border:1px solid #e0e0e0;border-radius:3px;box-shadow:3px -5px 3px #ccc;width:270px;height:168px;overflow:hidden;padding:5px;float:left;margin-right:25px;}
+.div_table td{line-height:45px;padding:0 5px;}
+
+.bor_b td{border-bottom:1px solid #f2f2f2;}
+
+
+
+/*投诉举报*/
+.content_left{/*width:675px;*/float:left;}
+.complaint_know{border:2px solid #e8e8e8;padding:2px;}
+.complaint_know_cont{border:2px solid #f5f5f5;padding:20px 25px;}
+.complaint_know_cont_txt{line-height:30px;}
+.red_txt{color:#F00;}
+.content_right{}
+.complaint_content{border:2px solid #e8e8e8;padding:30px 50px;background: #fafafa none repeat scroll 0 0}
+.complaint_content p{line-height:45px;}
+.complaint_content p label{width:200px;text-align:right;margin-right:30px;display:inline-block;}
+.complaint_content p input{border:1px solid #dddddd;line-height:30px;border-radius:2px;width:350px;padding:0 5px;}
+.tinabao_content label{width:200px;text-align:right;margin-right:30px;display:block;float:left;}
+.tinabao_content textarea{border:1px solid #dddddd;line-height:30px;border-radius:2px;width:350px;height:100px; padding:0 5px;}
+.div_btn{padding-left:235px;}
+.reset{padding:8px 35px;background:#363636;border-radius:3px;border:none;color:#fff;margin-right:30px;}
+.submit{padding:8px 35px;background:#75b600;border-radius:3px;border:none;color:#fff;}
+
+/*企业名录*/
+.company_content{}
+.company_item{border-bottom:1px dashed #ccc;padding-bottom:40px;}
+.company_item_text h3{color:#000;}
+.company_item img{height:110px;width: 147px }
+
+/*注册*/
+.complaint_content tr{line-height:45px;}
+.complaint_content td label{width:200px;text-align:right;margin-right:30px;display:inline-block;}
+.complaint_content td input{border:1px solid #dddddd;line-height:25px;border-radius:2px;width:350px;padding:0 5px;}
+
+/*注册成功*/
+.success_content{border:2px solid #f5f5f5;padding:20px 25px;}
+.success_content h3{font-size:40px;background:url("../images/Symbol_Check_.png") no-repeat;height:128px;line-height: 133px;margin-left:282px;padding-left:132px;}
+.success_txt{text-align:center;border-top:1px solid #f2f2f2;margin-top:30px;padding-top:30px;}
+.success_txt p{padding:20px 0;}
+
+/*注册失败*/
+.error_content{border:2px solid #f5f5f5;padding:20px 25px;}
+.error_content h3{font-size:40px;background:url("../images/error2.png") no-repeat;height:128px;line-height: 133px;margin-left:282px;padding-left:132px;}
+.error_txt{text-align:center;border-top:1px solid #f2f2f2;margin-top:30px;padding-top:30px;}
+.error_txt p{padding:20px 0;}
+
+
+
+/*举报成功*/
+.complaint_success_content{border:2px solid #f5f5f5;padding:50px 25px;}
+.complaint_success_content h3{font-size:40px;background:url("../images/check_complaint.png") no-repeat;height:128px;line-height:133px;margin-left:253px;padding-left:155px;}
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--  -->
+<hibernate-mapping>
+    <class name="com.hontek.enforce.pojo.LawUser" table="TS_LAW_USER">
+        <id name="userId" >
+            <column name="USER_ID"/>
+            <generator class="assigned" />
+         </id>
+        <property name="entName" >
+            <column name="ENT_NAME" />
+        </property>
+        <property name="userName" >
+            <column name="USER_NAME" />
+        </property>
+        <property name="userNo" >
+            <column name="USER_NO"/>
+        </property>
+       <property name="addr" >
+            <column name="ADDR"/>
+        </property>
+        <property name="phone" >
+            <column name="PHONE"/>
+        </property>
+        <property name="sex" >
+            <column name="SEX"/>
+        </property>
+        
+        <property name="age" >
+            <column name="AGE"/>
+        </property>
+        <property name="createTime" >
+            <column name="CREATE_TIME"/>
+ 		</property>
+ 		
+ 		 
+    </class>
+</hibernate-mapping>
+

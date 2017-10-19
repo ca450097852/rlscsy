@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="interface-package" extends="struts-xgx" namespace="/">
+		
+		<!-- 同步接口 -->
+		<action name="interface_*_*" class="com.hontek.synchronous.action.{1}Action" method="{2}"> 
+			<result name="json"></result>
+		</action>	
+		
+		
+		<action name="interfaceEnt_*" class="entInterfaceAction" method="{1}"> 
+			<result name="json"></result>
+		</action>	
+		
+		<action name="interfacePro_*" class="proInterfaceAction" method="{1}"> 
+			<result name="json"></result>
+		</action>	
+		
+		<action name="interfaceTrace_*" class="traceInterfaceAction" method="{1}"> 
+			<result name="json"></result>
+		</action>
+		
+		<action name="interfaceZizhi_*" class="zizhiInterfaceAction" method="{1}"> 
+			<result name="json"></result>
+		</action>
+		
+		<action name="interfaceInfo_*" class="infoInterfaceAction" method="{1}">
+			<result name="json"></result>
+		</action>
+		
+		<action name="dataInfo_*" class="syncDataAction" method="{1}">
+			<result name="json"></result>
+		</action>
+	</package>
+
+</struts>
+
+

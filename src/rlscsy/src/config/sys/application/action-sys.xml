@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/aop  http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+    http://www.springframework.org/schema/tx  http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+    <!-- 配置对应的Action  以及该Action里面对应的Service -->
+    <bean id="entTypeAction" class="com.hontek.sys.action.EntTypeAction" scope="prototype">
+		<property name="entTypeService" ref="entTypeService" />
+	</bean>
+
+    <bean id="EnterpriseAction" class="com.hontek.sys.action.EnterpriseActon" scope="prototype">
+		<property name="enterprseService" ref="enterprseService" />
+	</bean>
+	
+	<bean id="userAction" class="com.hontek.sys.action.UserAction" scope="prototype">
+		<property name="userService" ref="userService" />
+		<property name="enterprseService" ref="enterprseService" />
+		<property name="rolePurvServiceInter" ref="rolePurvServiceInter" />
+		<property name="entExpandService" ref="entExpandService"/>
+		<property name="entStyleService" ref="entStyleService"/>
+		
+	</bean>
+	
+	<bean id="roleAction" class="com.hontek.sys.action.RoleAction" scope="prototype">
+		<property name="roleService" ref="roleService" />
+	</bean>
+	
+	<bean id="logAction" class="com.hontek.sys.action.LogAction" scope="prototype">
+		<property name="logService" ref="logService" />
+	</bean>
+	
+	<bean id="colAction" class="com.hontek.sys.action.ColAction" scope="prototype">
+		<property name="colService" ref="colService" />
+	</bean>
+	
+	<bean id="baseAction" class="com.hontek.comm.action.BaseAction" scope="prototype" lazy-init="false">
+		<property name="logService" ref="logService" />
+	</bean>
+	
+	<bean id="rolePurvAction" class="com.hontek.sys.action.RolePurvAction" scope="prototype">
+		<property name="rolePurvServiceInter" ref="rolePurvServiceInter" />
+		<property name="rolePurvDefServiceInter" ref="rolePurvDefServiceInter" />
+	</bean>
+	
+	<!-- 接入系统账号 -->
+    <bean id="interAccountAction" class="com.hontek.sys.action.InterAccountAction" scope="prototype">
+		<property name="interAccountServiceInter" ref="interAccountServiceInter" />
+	</bean>
+	
+	<!-- 系统配置信息 -->
+	<bean id="sysconfigAction" class="com.hontek.sys.action.SysconfigAction" scope="prototype">
+		<property name="sysconfigService" ref="sysconfigService" />
+	</bean>
+	
+	
+	<!-- 风格关系 -->
+	<bean id="entStyleAction" class="com.hontek.sys.action.EntStyleAction" scope="prototype">
+		<property name="entStyleService" ref="entStyleService" />
+	</bean>
+	
+	
+	
+	<bean class="com.hontek.comm.base.ApplicationContextUtil"></bean>
+	
+	<!-- 这里引入 TimeOurAction, 判断会话时长  -->
+	<bean id="timeOutAction" class="com.hontek.comm.action.TimeOutAction" scope="prototype"></bean>
+	
+	<!-- 门户风格设置表 -->
+	<bean id="styleConfigAction" class="com.hontek.sys.action.StyleConfigAction" scope="prototype">
+		<property name="styleConfigService" ref="styleConfigService"/>
+	</bean>
+	
+	<bean id="entExpandAction" class="com.hontek.sys.action.EntExpandAction" scope="prototype">
+		<property name="entExpandService" ref="entExpandService"/>
+	</bean>
+	
+	<bean id="bannerAction" class="com.hontek.sys.action.BannerAction" scope="prototype">
+		<property name="bannerService" ref="bannerService"/>
+	</bean>
+	
+	<bean id="tagStyleAction" class="com.hontek.sys.action.TagStyleAction" scope="prototype">
+		<property name="tagStyleService" ref="tagStyleService"/>
+	</bean>
+</beans>

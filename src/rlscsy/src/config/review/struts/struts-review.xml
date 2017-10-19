@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="review-package" extends="struts-xgx" namespace="/">
+	    		
+	    <!-- 生产类型 -->
+		<action name="proType_*" class="proTypeAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<!-- 产品 -->
+		<action name="pro_*" class="productAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<action name="mbpro_*" class="productAction" method="{1}"> 
+			<result name="json"></result>
+		</action>
+		
+		<!-- 溯源信息 -->
+		<action name="trace_*" class="traceAction" method="{1}"> 
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<action name="proArea_*" class="proAreaAction" method="{1}">
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<action name="proBatch_*" class="proBatchAction" method="{1}">
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<action name="proSeed_*" class="proSeedAction" method="{1}">
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		
+		<action name="proApp_*" class="productAppendixAction" method="{1}">
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		<!-- 附件 -->
+		<action name="traceApp_*" class="traceAppdixAction" method="{1}">
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		 <!-- 种植喂养表 -->
+		<action name="plantRaise_*" class="plantRaiseAction" method="{1}">
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		<!-- 防疫表、植保表 -->
+		<action name="prevention_*" class="preventionAction" method="{1}">
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<!-- 加工包装 -->
+		<action name="process_*" class="processAction" method="{1}">
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<!-- 仓储运输 -->
+		<action name="storetransport_*" class="storeTransportAction" method="{1}">
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<!-- 检验报告 -->
+		<action name="proCheck_*" class="proCheckAction" method="{1}">
+			<result name="json"></result>
+			<interceptor-ref name="loginInterceptorStack" />
+		</action>
+		
+		<!-- 前台调用 -->
+		<action name="web_*!*" class="com.hontek.review.action.{1}Action" method="{2}">
+			<result name="json"></result>
+		</action>
+	</package>
+
+</struts>
+
+
